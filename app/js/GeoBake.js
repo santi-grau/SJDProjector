@@ -3,7 +3,7 @@ import GLTFLoader from 'three-gltf-loader'
 import birds from '../assets/models/*.gltf'
 import EventEmitter from 'event-emitter-es6'
 
-class ComputeScene{
+class GeoBake{
 	constructor( renderer ){
 		this.emitter = new EventEmitter()
 		this.scene = new THREE.Scene();
@@ -13,7 +13,6 @@ class ComputeScene{
 		this.models = []
 
 		this.camera = new THREE.PerspectiveCamera( 25, window.innerWidth / window.innerHeight, 1, 1000 );
-		this.camera.position.set( 3, 2, 3 );
 		this.loadScene( )
 	}
 
@@ -92,4 +91,4 @@ class ComputeScene{
 	}
 }
 
-export { ComputeScene as default }
+export { GeoBake as default }
