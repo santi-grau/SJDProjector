@@ -1,4 +1,4 @@
-import * as THREE from 'three'
+import { Scene, PerspectiveCamera, DataTexture, RGBFormat, FloatType, AnimationMixer, BufferAttribute, Vector3, Vector4, Matrix4 } from 'three'
 import GLTFLoader from 'three-gltf-loader'
 import birds from '../assets/models/*.gltf'
 import EventEmitter from 'event-emitter-es6'
@@ -6,13 +6,13 @@ import EventEmitter from 'event-emitter-es6'
 class GeoBake{
 	constructor( renderer ){
 		this.emitter = new EventEmitter()
-		this.scene = new THREE.Scene();
+		this.scene = new Scene();
 		this.renderer = renderer
 		this.tSize = 2048
 		this.tData = new Float32Array( 3 * this.tSize * this.tSize )
 		this.models = []
 
-		this.camera = new THREE.PerspectiveCamera( 25, window.innerWidth / window.innerHeight, 1, 1000 );
+		this.camera = new PerspectiveCamera( 25, window.innerWidth / window.innerHeight, 1, 1000 );
 		this.loadScene( )
 	}
 
@@ -21,7 +21,7 @@ class GeoBake{
 	}
 
 	writeTexture( ){
-		var texture = new THREE.DataTexture( this.tData, this.tSize, this.tSize, THREE.RGBFormat, THREE.FloatType );
+		var texture = new DataTexture( this.tData, this.tSize, this.tSize, RGBFormat, FloatType );
 		texture.needsUpdate = true
 		return this.emitter.emit( 'computeReady',  this.models, texture )
 	}
@@ -31,7 +31,7 @@ class GeoBake{
 		var root = gltf.scene
 		this.scene = root
 		var clip = animations[ 0 ]
-		this.mixer = new THREE.AnimationMixer( root )
+		this.mixer = new AnimationMixer( root )
 		this.mixer.clipAction( clip ).play()
 		this.skinnedMesh = this.scene.children[ 0 ].children[ 1 ]
 
@@ -51,7 +51,7 @@ class GeoBake{
 		var ids = []
 		for( var i = 0 ; i < this.skinnedMesh.geometry.attributes.position.count ; i++ ) ids.push( i, offset, Math.random() )
 
-		this.skinnedMesh.geometry.addAttribute( 'vertexID', new THREE.BufferAttribute( new Float32Array( ids ), 3 ) );
+		this.skinnedMesh.geometry.addAttribute( 'vertexID', new BufferAttribute( new Float32Array( ids ), 3 ) );
 		this.skinnedMesh.geometry.name = Object.keys( birds )[ this.models.length ]
 		this.models.push( this.skinnedMesh.geometry )
 
@@ -60,7 +60,7 @@ class GeoBake{
 	}
 
 	computeFrame( ) {
-		var vertex = new THREE.Vector3(), temp = new THREE.Vector3(), skinned = new THREE.Vector3(), skinIndices = new THREE.Vector4(), skinWeights = new THREE.Vector4(), boneMatrix = new THREE.Matrix4();
+		var vertex = new Vector3(), temp = new Vector3(), skinned = new Vector3(), skinIndices = new Vector4(), skinWeights = new Vector4(), boneMatrix = new Matrix4();
 		var skeleton = this.skinnedMesh.skeleton
 		var boneMatrices = skeleton.boneMatrices
 		var geometry = this.skinnedMesh.geometry

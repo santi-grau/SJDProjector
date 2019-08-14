@@ -9,8 +9,18 @@ html
         link(rel='stylesheet', id='mainStylesheet' href='../css/main.styl')
     body
         #buttons
-            button( data-type = 'text', data-id='lorem') Lorem
-            button( data-type = 'image', data-id='smile') 😀
-            button( data-type = 'image', data-id='thumb') 👍
-            button( data-type = 'image', data-id='elephant') 🐘
+            div
+                span Formation 
+                button( data-type = 'text', data-id='lorem') Lorem
+                button.emoji( data-type = 'icon', data-id='smile') 
+                    span 😀
+                button.emoji( data-type = 'icon', data-id='thumb')
+                    span 👍
+                button.emoji( data-type = 'icon', data-id='elephant')
+                    span 🐘
+                button( data-type = 'reset', data-id='none' ) x
+            div 
+                span Animation 
+                button( data-type = 'animation', data-id='lorem') Tiger
+                button( data-type = 'animation', data-id='lorem') Bird
         script( src = '../js/index.js' )

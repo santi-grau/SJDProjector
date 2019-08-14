@@ -58,6 +58,19 @@ class ComputationRender{
         this.dtFormation.needsUpdate = true
     }
 
+    undoFormation( ){
+        var theArray = this.dtFormation.image.data
+        
+        for ( var k = 0, kl = theArray.length; k < kl; k += 4 ) {
+            theArray[ k + 0 ] = ( Math.random() - 0.5 ) * 600
+            theArray[ k + 1 ] = ( Math.random() - 0.5 ) * 400
+            theArray[ k + 2 ] = 1
+            theArray[ k + 3 ] = 0
+        }
+
+        this.dtFormation.needsUpdate = true
+    }
+
     fillPositionTexture( texture, BOUNDS  ) {
         var theArray = texture.image.data
         for ( var k = 0, kl = theArray.length; k < kl; k += 4 ) {
