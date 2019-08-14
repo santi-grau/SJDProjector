@@ -26,23 +26,28 @@ body
 
 #p5canvas
 	position fixed
-	top 10px
-	left 10px
+	top 50%
+	left 50%
+	transform translateX( -50% ) translateY( -50% )
 	background #cdcdcd
+	opacity 0
 
 #shaper
-	position fixed
+	poxsition fixed
 	top 10px
 	left 10px
 	background #dedede
 
-#debug
-	display none
+#buttons
 	position fixed
-	background rgba(0,0,0,0.8)
 	z-index 10000
 	padding 20px
 	top 0
 	left 0
 	width calc( 100vw - 40px )
 	height calc( 100vh - 40px )
+	button 
+		width 60px
+		height 20px
+		margin-right 10p
+		float left

@@ -4,18 +4,21 @@ import shaders from './shaders/*.*'
 
 class ComputationRender{
     constructor( renderer, birds ){
+        this.tSize = birds
         this.renderer = renderer
         var WIDTH = birds
         this.last = performance.now()
         var BIRDS = WIDTH * WIDTH
         var BOUNDS = 1600
         this.gpuCompute = new GPUComputationRenderer( WIDTH, WIDTH, this.renderer )
-        var dtPosition = this.gpuCompute.createTexture()
-        var dtVelocity = this.gpuCompute.createTexture()
-        this.fillPositionTexture( dtPosition, BOUNDS )
-        this.fillVelocityTexture( dtVelocity, BOUNDS )
-        this.velocityVariable = this.gpuCompute.addVariable( "textureVelocity", shaders.velocity.frag, dtVelocity )
-        this.positionVariable = this.gpuCompute.addVariable( "texturePosition", shaders.position.frag, dtPosition )
+        this.dtPosition = this.gpuCompute.createTexture()
+        this.dtFormation = this.gpuCompute.createTexture()
+        this.dtVelocity = this.gpuCompute.createTexture()
+        this.fillPositionTexture( this.dtPosition, BOUNDS )
+        this.fillFormationTexture( this.dtFormation )
+        this.fillVelocityTexture( this.dtVelocity )
+        this.velocityVariable = this.gpuCompute.addVariable( "textureVelocity", shaders.velocity.frag, this.dtVelocity )
+        this.positionVariable = this.gpuCompute.addVariable( "texturePosition", shaders.position.frag, this.dtPosition )
         this.gpuCompute.setVariableDependencies( this.velocityVariable, [ this.positionVariable, this.velocityVariable ] )
         this.gpuCompute.setVariableDependencies( this.positionVariable, [ this.positionVariable, this.velocityVariable ] )
         this.positionUniforms = this.positionVariable.material.uniforms
@@ -29,6 +32,8 @@ class ComputationRender{
         this.velocityUniforms[ "cohesionDistance" ] = { value: 1.0 }
         this.velocityUniforms[ "freedomFactor" ] = { value: 0.0 }
         this.velocityUniforms[ "predator" ] = { value: new Vector3() }
+        this.velocityUniforms[ "flyToTarget" ] = { value: false }
+        this.velocityUniforms[ "formationTexture" ] = { value: this.dtFormation }
         this.velocityVariable.material.defines.BOUNDS = BOUNDS.toFixed( 2 )
         this.velocityVariable.wrapS = RepeatWrapping
         this.velocityVariable.wrapT = RepeatWrapping
@@ -36,6 +41,21 @@ class ComputationRender{
         this.positionVariable.wrapT = RepeatWrapping
         var error = this.gpuCompute.init()
         if ( error !== null ) console.error( error )
+    }
+
+    makeFormation( c, d ){
+        var points = c
+        var dims = d
+        var theArray = this.dtFormation.image.data
+        
+        points.forEach( ( p, i ) => {
+            theArray[ i * 4 ] = ( p.x - d.w / 2 ) / d.w * 512 * 0.643
+            theArray[ i * 4 + 1 ] = -( p.y - d.h / 2 ) / d.h * 100 * 0.643
+            theArray[ i * 4 + 2 ] = p.r
+            theArray[ i * 4 + 3 ] = 1
+        } )
+
+        this.dtFormation.needsUpdate = true
     }
 
     fillPositionTexture( texture, BOUNDS  ) {
@@ -48,27 +68,32 @@ class ComputationRender{
         }
     }
 
-    fillVelocityTexture( texture, BOUNDS ) {
+    fillVelocityTexture( texture ) {
         var theArray = texture.image.data
         for ( var k = 0, kl = theArray.length; k < kl; k += 4 ) {
-            theArray[ k + 0 ] = Math.random() - 0.5 * 10
-            theArray[ k + 1 ] = Math.random() - 0.5 * 10
-            theArray[ k + 2 ] = Math.random() - 0.5 * 10
+            theArray[ k + 0 ] = ( Math.random() - 0.5 ) * 10
+            theArray[ k + 1 ] = ( Math.random() - 0.5 ) * 10
+            theArray[ k + 2 ] = ( Math.random() - 0.5 ) * 10
             theArray[ k + 3 ] = 1
         }
     }
 
+    fillFormationTexture( texture ) {
+        var theArray = texture.image.data
+        for ( var k = 0, kl = theArray.length; k < kl; k += 4 ) {
+            theArray[ k + 0 ] = ( Math.random() - 0.5 ) * 600
+            theArray[ k + 1 ] = ( Math.random() - 0.5 ) * 400
+            theArray[ k + 2 ] = 1
+            theArray[ k + 3 ] = 0
+        }
+    }
+
     step( time ){
-        this.now = performance.now()
-        var delta = ( this.now - this.last ) / 1000
-        if ( delta > 1 ) delta = 1 // safety cap on large deltas
-        this.last =this.now
-        this.positionUniforms[ "time" ].value = this.now
+        var now = performance.now()
+        var delta = Math.min( 1, ( now - this.last ) / 1000 )
+        this.last = now
         this.positionUniforms[ "delta" ].value = delta
-        this.velocityUniforms[ "time" ].value = this.now
         this.velocityUniforms[ "delta" ].value = delta
-        // this.birdUniforms[ "time" ].value = now
-        // this.birdUniforms[ "delta" ].value = delta
         this.velocityUniforms[ "predator" ].value.set( 10000,10000, 0 )
         this.mouseX = 10000
         this.mouseY = 10000

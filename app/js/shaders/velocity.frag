@@ -1,15 +1,15 @@
-uniform float time;
 uniform float delta; // about 0.016
 uniform float separationDistance; // 20
 uniform float alignmentDistance; // 40
 uniform float cohesionDistance; //
 uniform float freedomFactor;
+uniform sampler2D formationTexture;
 uniform vec3 predator;
+uniform bool flyToTarget;
 const float width = resolution.x;
 const float height = resolution.y;
 const float PI = 3.141592653589793;
 const float PI_2 = PI * 2.0;
-// const float VISION = PI * 0.55;
 float zoneRadius = 600.0;
 float zoneRadiusSquared = 1600.0;
 float separationThresh = 0.45;
@@ -29,6 +29,7 @@ void main() {
     vec3 birdPosition, birdVelocity;
     vec3 selfPosition = texture2D( texturePosition, uv ).xyz;
     vec3 selfVelocity = texture2D( textureVelocity, uv ).xyz;
+    vec4 selfFormation = texture2D( formationTexture, uv );
     float dist;
     vec3 dir; // direction
     float distSquared;
@@ -53,7 +54,7 @@ void main() {
     }
 
     // Attract flocks to the center
-    vec3 central = vec3( 0., 0., 0. );
+    vec3 central = vec3( selfFormation.x, selfFormation.y, 0.0 );
     dir = selfPosition - central;
     dist = length( dir );
     dir.y *= 2.5;
@@ -90,8 +91,9 @@ void main() {
     }
     
     // Speed Limits
-    if ( length( velocity ) > limit ) {
-        velocity = normalize( velocity ) * limit;
-    }
-    gl_FragColor = vec4( velocity, 1.0 );
+    if ( length( velocity ) > limit ) velocity = normalize( velocity ) * limit;
+
+    if( selfFormation.a > 0.0 ) velocity = ( selfFormation.xyz - selfPosition ) * 0.1;
+    float phase = 1.0;
+    gl_FragColor = vec4( velocity, phase );
 }

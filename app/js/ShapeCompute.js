@@ -1,4 +1,6 @@
-import p5 from 'p5';
+import p5 from 'p5'
+import EventEmitter from 'event-emitter-es6'
+import icons from './../assets/icons/*.png'
 
 class Circle {
     constructor( x, y ){
@@ -7,9 +9,7 @@ class Circle {
         this.r = 1
         this.growing = true
     }
-    
     grow( r ) { if ( this.growing ) this.r += r }
-
     edges() { return (this.x + this.r >= this.width || this.x - this.r <= 0 || this.y + this.r >= this.height || this.y - this.r <= 0) }
 }
 
@@ -19,54 +19,77 @@ class ShapeCompute extends p5{
         p.draw = p.draw.bind( p ) // draw() has to be bind() like preload()
     }
 
-    constructor( data ){
+    constructor( ){
         super()
-        this.circles = []
         this.spots = []
-        this.data = data
         this.settings = {
-            totalSimultaneous : 2,
-            radiusGrowth : 1,
+            totalSimultaneous : 1,
+            radiusGrowth : 2,
             maxAttempts : 15,
-            maxRadius : 8,
+            maxRadius : 5,
+            maxCircles : 256,
             circleDistance : 1
         }
+        this.currentWord = 0
+        this.emitter = new EventEmitter()
         super( ShapeCompute.redirectP5Callbacks );
     }
 
-    // preload(){
-    //     img = sk.loadImage( im )
-	// }
-
     setup( ){
-        var width = 1024, height = 200
-        this.createCanvas( width, height ).id('p5canvas')
+        this.width = 1024
+        this.height = 200
+        this.createCanvas( this.width, this.height ).id('p5canvas')
+        
+    }
+
+    makeImage( icon ){
+        this.loadImage( icons[ icon ], img => {
+            this.background(0)
+            this.fill(255, 255, 255)
+            this.image( img, ( this.width - img.width ) / 2, ( this.height - img.height ) / 2 )
+            this.computePixels()
+        } )
+    }
+
+    makeText( text ){
+        var words = [ 'LOREM', 'IPSUM', 'DOLOR', 'SIT', 'AMET' ]
+        var s = text || words[ this.currentWord ]
         this.background(0)
-        this.textSize(180)
         this.fill(255, 255, 255)
+        this.textSize(180)
+        
         this.textAlign( this.CENTER, this.CENTER )
-        this.text( this.data , 0, 0, width, height)
+        this.text( s , 0, 0, this.width, this.height)
+        this.computePixels()
+        if( this.currentWord < words.length - 1 ) this.currentWord ++ 
+        else this.currentWord = 0
+    }
+
+    computePixels(){
+        this.circles = []
+        this.spots = []
         this.loadPixels()
-        for (var x = 0; x < width; x++) for (var y = 0; y < height; y++) if ( this.brightness( [ this.pixels[ ( x + y * width ) * 4 ] ] ) > 1 ) this.spots.push( this.createVector( x, y ) )
+        for (var x = 0; x < this.width; x++) for (var y = 0; y < this.height; y++) if ( this.brightness( [ this.pixels[ ( x + y * this.width ) * 4 ] ] ) > 1 ) this.spots.push( this.createVector( x, y ) )
+        this.loop()
     }
 
     draw( ){
+        if( !this.spots.length ) return 
         this.background( 0 )
         var total = this.settings.totalSimultaneous
         var count = 0
         var attempts = 0
     
-        while (count < total) {
+        while ( count < total ) {
             var newC = this.newCircle()
             if (newC !== null) {
                 this.circles.push( newC )
                 count++
             }
             attempts++
-            if ( attempts > this.settings.maxAttempts ) {
+            if ( attempts > this.settings.maxAttempts || this.circles.length == this.settings.maxCircles ) {
                 this.noLoop()
-                console.log("finished")
-                console.log( this.circles )
+                this.emitter.emit( 'positionUpdate', this.circles, { w : this.width, h : this.height } )
                 break
             }
         }

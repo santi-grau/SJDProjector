@@ -1,10 +1,10 @@
 import * as THREE from 'three'
 // import MainScene from './MainScene'
-import shaders from './shaders/*.*'
+import shaders from './shaders/birds.*'
 import GeoBake from './GeoBake'
 import ComputationRender from './ComputationRender'
 import ShapeCompute from './ShapeCompute'
-import OrbitControls from 'orbit-controls-es6'
+// import OrbitControls from 'orbit-controls-es6'
 
 class Index{
     constructor(){
@@ -12,7 +12,7 @@ class Index{
         this.node.id = "threeLayer"
         document.body.appendChild( this.node )
 
-        this.tSize = 8
+        this.tSize = 16
         if(window.location.hash) this.tSize = Math.sqrt( parseInt( window.location.hash.substring( 1 ) ) )
         
         this.renderer = new THREE.WebGLRenderer( { antialias : true, alpha : true } )
@@ -20,33 +20,58 @@ class Index{
         this.renderer.setSize( this.node.offsetWidth, this.node.offsetHeight )
         this.node.appendChild( this.renderer.domElement )
 
+        this.computationRender = new ComputationRender( this.renderer, this.tSize )
+
+        this.shapeCompute = new ShapeCompute( ) 
+        this.shapeCompute.emitter.on( 'positionUpdate', ( c, d ) => this.shapeUpdate( c, d ) )
+        
+        var buts = document.getElementsByTagName( 'button' )
+        for ( var i = 0 ; i < buts.length ; i++ ) {
+            buts[ i ].addEventListener( 'click', ( e ) => this.updateFormation( e ) )
+        }
+
         this.precomputed = new GeoBake( this.renderer )
         this.precomputed.emitter.on( 'computeReady', ( models, texture ) => this.init( models, texture ) )
     }
 
-    init( models, texture ){
+    updateFormation( e ){
+        var type = e.target.dataset.type
+        var id = e.target.dataset.id
+        if( type == 'text' ) this.shapeCompute.makeText( )
+        else this.shapeCompute.makeImage( id )
+    }
 
-        this.computationRender = new ComputationRender( this.renderer, 8 )
-        this.shapeCompute = new ShapeCompute( 'SANTI' )
-        
+    shapeUpdate( c, d ){
+        this.computationRender.makeFormation( c, d )
+    }
+
+    init( models, texture ){        
         this.currentFrame = 0
         this.camera = new THREE.PerspectiveCamera( 75, this.node.offsetWidth / this.node.offsetHeight, 1, 3000 );
         this.camera.position.set( 0, 0, 200 );
 		this.camera.lookAt( 0, 0, 0 );
         
-        const controls = new OrbitControls(this.camera, this.renderer.domElement);
-        controls.enabled = true;
-        controls.maxDistance = 500;
-        controls.minDistance = 50;
+        // const controls = new OrbitControls(this.camera, this.renderer.domElement);
+        // controls.enabled = true;
+        // controls.maxDistance = 500;
+        // controls.minDistance = 50;
 
         this.scene = new THREE.Scene()
+        // var gridHelper = new THREE.GridHelper( 1000, 100 )
+        // gridHelper.rotation.x = Math.PI / 2
+        // this.scene.add( gridHelper );
+        // var gridHelper = new THREE.GridHelper( 1000, 100 )
+        // this.scene.add( gridHelper );
+        // this.scene.add( new THREE.AxesHelper( 20 ) )
 
+        
         var colors = [ [0.16, 0.63, 0.6 ], [0.33, 0.68, 0.86 ], [0.54, 0.23, 0.55 ], [0.0, 0.36, 0.64 ], [ 0.84, 0.05, 0.5 ] ]
         var geometry = new THREE.BufferGeometry();
         var pos = [], vid = [], ref = [], ind = [], col = []
         var vcount = 0
         var totalBirds = this.tSize * this.tSize
         for( var h = 0 ; h < totalBirds ; h++ ){
+            var seed = Math.random()
             var mid = Math.floor( Math.random() * 5 )
             var model = models[ mid ]
             var p = model.getAttribute( 'position' )
@@ -56,7 +81,7 @@ class Index{
 		    var y = ~ ~ ( h / this.tSize ) / this.tSize
             for( var i = 0 ; i < p.count ; i++ ){
                 pos.push( p.getX( i ),p.getY( i ), p.getZ( i ) )
-                vid.push( i, mid, Math.random() )
+                vid.push( i, mid, seed )
                 ref.push( x, y  )
                 col.push( colors[ mid ][ 0 ], colors[ mid ][ 1 ], colors[ mid ][ 2 ] )
             }
@@ -74,13 +99,14 @@ class Index{
 			uniforms: {
                 txtAnimation: { value : texture },
                 texturePosition : { value: null },
-		        textureVelocity : { value: null },
+                textureVelocity : { value: null },
+                textureFormation : { value : null },
 		        time : { value: 1.0 },
 		        delta : { value: 0.0 },
                 frame: { value : 0 }
 			},
-			vertexShader: shaders.compute.vert,
-            fragmentShader: shaders.compute.frag
+			vertexShader: shaders.vert,
+            fragmentShader: shaders.frag
         } );
         
 		this.mesh = new THREE.Mesh( geometry , material );
@@ -98,6 +124,7 @@ class Index{
         this.mesh.material.uniforms.frame.value = this.currentFrame
         this.mesh.material.uniforms[ "texturePosition" ].value = this.computationRender.gpuCompute.getCurrentRenderTarget( this.computationRender.positionVariable ).texture
         this.mesh.material.uniforms[ "textureVelocity" ].value = this.computationRender.gpuCompute.getCurrentRenderTarget( this.computationRender.velocityVariable ).texture
+        this.mesh.material.uniforms[ "textureFormation" ].value = this.computationRender.dtFormation
 
 		this.renderer.render( this.scene, this.camera );
        
