@@ -30,6 +30,7 @@ void main() {
 	float f = frame + floor( vertexID.z * 60.0 );
 	float ff = mod( f, 60.0 );
 	vec3 fPos = texture2D( txtAnimation, vec2( vertexID.x / 2048.0, ( ff + 60.0 * vertexID.y ) / 2048.0 ) ).xyz;
+	
 	fPos *= 20.0;
 
 	fPos = rotate( fPos, vec3( 0.0, 1.0, 0.0 ), -PI / 2.0 );

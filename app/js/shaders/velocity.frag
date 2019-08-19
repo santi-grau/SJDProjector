@@ -55,6 +55,7 @@ void main() {
 
     // Attract flocks to the center
     vec3 central = vec3( selfFormation.x, selfFormation.y, 0.0 );
+    // vec3 central = vec3( 0.0 );
     dir = selfPosition - central;
     dist = length( dir );
     dir.y *= 2.5;
