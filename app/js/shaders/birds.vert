@@ -5,10 +5,16 @@ uniform sampler2D texturePosition;
 uniform sampler2D textureFormation;
 uniform sampler2D textureVelocity;
 uniform float frame;
-attribute vec3 vertexID;
+attribute vec4 vertexID;
 varying vec3 col;
 
 const float PI = 3.1415926535897932384626433832795;
+
+// tortola 0.142599m
+// puput 0.283506m
+// golondrina 0.181948m
+// estornino 0.226689m
+// codorniz 0.189676m
 
 mat4 rotationMatrix(vec3 axis, float angle) {
 	axis = normalize(axis);
@@ -30,10 +36,15 @@ void main() {
 	float f = frame + floor( vertexID.z * 60.0 );
 	float ff = mod( f, 60.0 );
 	vec3 fPos = texture2D( txtAnimation, vec2( vertexID.x / 2048.0, ( ff + 60.0 * vertexID.y ) / 2048.0 ) ).xyz;
-	
+	fPos /= vertexID.w;
 	fPos *= 20.0;
 
-	fPos = rotate( fPos, vec3( 0.0, 1.0, 0.0 ), -PI / 2.0 );
+	// fPos = rotate( fPos, vec3( 0.0, 1.0, 0.0 ), -PI / 2.0 );
+
+	fPos = rotate( fPos, vec3( 1.0, 0.0, 0.0 ), PI / 2.0 );
+
+	fPos = rotate( fPos, vec3( 0.0, 0.0, 1.0 ), formation.z );
+
 	vec3 pos = texture2D( texturePosition, reference ).xyz;
 
 	fPos *= mat3( modelMatrix );
@@ -49,7 +60,7 @@ void main() {
 	mat3 maty =  mat3( cosry, 0, -sinry, 0, 1, 0, sinry, 0, cosry );
 	mat3 matz =  mat3( cosrz , sinrz, 0, -sinrz, cosrz, 0, 0, 0, 1 );
 
-	fPos =  maty * matz * fPos;
+	// fPos =  maty * matz * fPos;
 	fPos += pos;
 
 	gl_Position = projectionMatrix *  viewMatrix  * vec4( fPos, 1.0 );

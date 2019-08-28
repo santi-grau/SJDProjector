@@ -50,8 +50,8 @@ class ComputationRender{
         
         points.forEach( ( p, i ) => {
             theArray[ i * 4 ] = ( p.x - d.w / 2 ) / d.w * 512 * 0.643
-            theArray[ i * 4 + 1 ] = -( p.y - d.h / 2 ) / d.h * 100 * 0.643
-            theArray[ i * 4 + 2 ] = p.r
+            theArray[ i * 4 + 1 ] = -( p.y - d.h / 2 ) / d.h * 150 * 0.643
+            theArray[ i * 4 + 2 ] = p.rotation
             theArray[ i * 4 + 3 ] = 1
         } )
 

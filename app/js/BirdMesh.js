@@ -22,14 +22,17 @@ class BirdMesh extends Mesh {
     }
 
     init( models, texture ){
+        // console.log( models )
         var colors = [ [0.16, 0.63, 0.6 ], [0.33, 0.68, 0.86 ], [0.54, 0.23, 0.55 ], [0.0, 0.36, 0.64 ], [ 0.84, 0.05, 0.5 ] ]
+        var sizes = { tortola : 0.142599, puput : 0.283506, golondrina : 0.181948, estornino : 0.226689, codorniz : 0.189676  }
         var geometry = new BufferGeometry();
         var pos = [], vid = [], ref = [], ind = [], col = []
         var vcount = 0
         var totalBirds = this.tSize * this.tSize
         for( var h = 0 ; h < totalBirds ; h++ ){
             var seed = Math.random()
-            var mid = Math.floor( Math.random() * 5 )
+            var mid = Math.floor( Math.random() * models.length )
+            var scale = 0.283506 / sizes[ models[ mid ].name ]
             var model = models[ mid ]
             var p = model.getAttribute( 'position' )
             var d = model.index
@@ -37,8 +40,8 @@ class BirdMesh extends Mesh {
             var x = ( h % this.tSize ) / this.tSize
 		    var y = ~ ~ ( h / this.tSize ) / this.tSize
             for( var i = 0 ; i < p.count ; i++ ){
-                pos.push( p.getX( i ),p.getY( i ), p.getZ( i ) )
-                vid.push( i, mid, seed )
+                pos.push( 0, 0, 0 )
+                vid.push( i, mid, seed, scale )
                 ref.push( x, y  )
                 col.push( colors[ mid ][ 0 ], colors[ mid ][ 1 ], colors[ mid ][ 2 ] )
             }
@@ -47,7 +50,7 @@ class BirdMesh extends Mesh {
         }
 
         geometry.addAttribute( 'position', new BufferAttribute( new Float32Array( pos ), 3 ) )
-        geometry.addAttribute( 'vertexID', new BufferAttribute( new Float32Array( vid ), 3 ) )
+        geometry.addAttribute( 'vertexID', new BufferAttribute( new Float32Array( vid ), 4 ) )
         geometry.addAttribute( 'vColor', new BufferAttribute( new Float32Array( col ), 3 ) )
         geometry.addAttribute( 'reference', new BufferAttribute( new Float32Array( ref ), 2 ) )
         geometry.setIndex( ind )

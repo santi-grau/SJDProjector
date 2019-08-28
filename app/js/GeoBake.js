@@ -50,7 +50,6 @@ class GeoBake{
 		
 		var ids = []
 		for( var i = 0 ; i < this.skinnedMesh.geometry.attributes.position.count ; i++ ) ids.push( i, offset, Math.random() )
-
 		this.skinnedMesh.geometry.addAttribute( 'vertexID', new BufferAttribute( new Float32Array( ids ), 3 ) );
 		this.skinnedMesh.geometry.name = Object.keys( birds )[ this.models.length ]
 		this.models.push( this.skinnedMesh.geometry )

@@ -94,7 +94,7 @@ void main() {
     // Speed Limits
     if ( length( velocity ) > limit ) velocity = normalize( velocity ) * limit;
 
-    if( selfFormation.a > 0.0 ) velocity = ( selfFormation.xyz - selfPosition ) * 0.1;
+    if( selfFormation.a > 0.0 ) velocity = ( vec3( selfFormation.x, selfFormation.y, 0.0 ) - selfPosition ) * 0.1;
     float phase = 1.0;
     gl_FragColor = vec4( velocity, phase );
 }

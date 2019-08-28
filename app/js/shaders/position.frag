@@ -4,5 +4,5 @@ void main()	{
     vec4 tmpPos = texture2D( texturePosition, uv );
     vec3 position = tmpPos.xyz;
     vec3 velocity = texture2D( textureVelocity, uv ).xyz;
-    gl_FragColor = vec4( position + velocity * delta * 6. , 0.0 );
+    gl_FragColor = vec4( position + velocity * delta * 8. , 0.0 );
 }

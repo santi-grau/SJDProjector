@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "code ./ && parcel app/views/index.pug --no-hmr",
+    "start": "node ./parseSVG.js && code ./ && parcel app/views/index.pug --no-hmr",
     "build": "rm -rf docs && parcel build app/views/*.pug --no-source-maps --out-dir docs --public-url '.'"
   },
   "keywords": [],
@@ -16,7 +16,8 @@
     "glslify-deps": "^1.3.1",
     "parcel-bundler": "*",
     "pug": "*",
-    "stylus": "*"
+    "stylus": "*",
+    "svgson": "^4.0.0"
   },
   "dependencies": {
     "event-emitter-es6": "^1.1.5",
