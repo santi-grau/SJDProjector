@@ -12,7 +12,7 @@ class Index{
         this.renderer.setSize( this.node.offsetWidth, this.node.offsetHeight )
         this.node.appendChild( this.renderer.domElement )
 
-        this.birdMesh = new BirdMesh( this.renderer, 8 )
+        this.birdMesh = new BirdMesh( this.renderer, 16 )
         this.birdMesh.emitter.on( 'geoReady', () => this.init() )
 
         var buts = document.getElementsByTagName( 'button' )

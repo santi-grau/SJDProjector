@@ -14,15 +14,15 @@ class ShapeCompute extends p5{
 
     constructor( ){
         super( ShapeCompute.redirectP5Callbacks );
-        this.spots = []
-        this.settings = {
-            totalSimultaneous : 1,
-            radiusGrowth : 2,
-            maxAttempts : 15,
-            maxRadius : 5,
-            maxCircles : 256,
-            circleDistance : 1
-        }
+        // this.spots = []
+        // this.settings = {
+        //     totalSimultaneous : 1,
+        //     radiusGrowth : 2,
+        //     maxAttempts : 15,
+        //     maxRadius : 5,
+        //     maxCircles : 256,
+        //     circleDistance : 1
+        // }
         this.currentWord = 0
         this.emitter = new EventEmitter()
         
@@ -68,7 +68,7 @@ class ShapeCompute extends p5{
     }
 
     makeText( text ){
-        var words = [ 'MADI', 'IPSUM', 'DOLOR', 'SIT', 'AMET' ]
+        var words = [ 'MABAST', 'IPSUM', 'DOLOR', 'SIT', 'AMET' ]
         var s = text || words[ this.currentWord ]
         this.background(0)
         this.fill(255, 255, 255)
