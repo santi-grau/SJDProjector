@@ -36,13 +36,12 @@ void main() {
 	float f = frame + floor( vertexID.z * 60.0 );
 	float ff = mod( f, 60.0 );
 	vec3 fPos = texture2D( txtAnimation, vec2( vertexID.x / 2048.0, ( ff + 60.0 * vertexID.y ) / 2048.0 ) ).xyz;
-	fPos /= vertexID.w;
-	fPos *= 20.0;
+	fPos *= vertexID.w;
+	fPos *= 14.0;
 
-	// fPos = rotate( fPos, vec3( 0.0, 1.0, 0.0 ), -PI / 2.0 );
+	// fPos = rotate( fPos, vec3( 0.0, 1.0, 0.0 ), -PI / 2.0 ); // rotation of model to fly straight
 
 	fPos = rotate( fPos, vec3( 1.0, 0.0, 0.0 ), PI / 2.0 );
-
 	fPos = rotate( fPos, vec3( 0.0, 0.0, 1.0 ), formation.z );
 
 	vec3 pos = texture2D( texturePosition, reference ).xyz;

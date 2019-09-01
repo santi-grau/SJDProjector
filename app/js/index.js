@@ -16,7 +16,15 @@ class Index{
         this.birdMesh.emitter.on( 'geoReady', () => this.init() )
 
         var buts = document.getElementsByTagName( 'button' )
-        for ( var i = 0 ; i < buts.length ; i++ ) buts[ i ].addEventListener( 'click', ( e ) => this.birdMesh.updateFormation( e ) )
+        for ( var i = 0 ; i < buts.length ; i++ ) buts[ i ].addEventListener( 'click', ( e ) => {
+            var data = e.target.dataset
+            this.birdMesh.makeFormation( data )
+            if( data.current ){
+                ( data.current < data.string.split(' ').length - 1 ) ? data.current++ : data.current = 0
+                e.target.innerHTML = data.string.split(' ')[ data.current ].toLowerCase()
+                data.content = data.string.split(' ')[ data.current ]
+            }
+        })
     }
 
     init(  ){
@@ -31,7 +39,6 @@ class Index{
 
     step( time ){
         requestAnimationFrame( this.step.bind( this ) )
-
         this.birdMesh.step()
 		this.renderer.render( this.scene, this.camera );
     }

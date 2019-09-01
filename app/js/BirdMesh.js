@@ -24,15 +24,17 @@ class BirdMesh extends Mesh {
     init( models, texture ){
         // console.log( models )
         var colors = [ [0.16, 0.63, 0.6 ], [0.33, 0.68, 0.86 ], [0.54, 0.23, 0.55 ], [0.0, 0.36, 0.64 ], [ 0.84, 0.05, 0.5 ] ]
-        var sizes = { tortola : 0.142599, puput : 0.283506, golondrina : 0.181948, estornino : 0.226689, codorniz : 0.189676  }
+        // [tortola]
+        var sizes = { tortola : 0.743015, puput : 1.0483234923, golondrina : 1.6334667048, estornino : 1.3110737618, codorniz : 0.9906866667  }
         var geometry = new BufferGeometry();
         var pos = [], vid = [], ref = [], ind = [], col = []
         var vcount = 0
         var totalBirds = this.tSize * this.tSize
+        
         for( var h = 0 ; h < totalBirds ; h++ ){
             var seed = Math.random()
             var mid = Math.floor( Math.random() * models.length )
-            var scale = 0.283506 / sizes[ models[ mid ].name ]
+            var scale = sizes[ models[ mid ].name ]
             var model = models[ mid ]
             var p = model.getAttribute( 'position' )
             var d = model.index
@@ -74,18 +76,13 @@ class BirdMesh extends Mesh {
         this.emitter.emit( 'geoReady' )
     }
 
-    shapeUpdate( c, d ){
-        this.computationRender.makeFormation( c, d )
+    shapeUpdate( c ){
+        this.computationRender.makeFormation( c )
     }
 
-    updateFormation( e ){
-        console.log( e )
-        var type = e.target.dataset.type
-        var id = e.target.dataset.id
-        console.log( type )
-        if( type == 'text' ) this.shapeCompute.makeText( )
-        else if( type == 'icon' ) this.shapeCompute.makeImage( id )
-        else if( type == 'reset' ) this.computationRender.undoFormation( )
+    makeFormation( data ){
+        if( data.type == 'text' ) this.shapeCompute.makeText( data.content )
+        else if( data.type == 'icon' ) this.shapeCompute.makeImage( data.content )
     }
 
     step( time ) {

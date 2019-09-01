@@ -30,7 +30,7 @@ class ComputationRender{
         this.velocityUniforms[ "separationDistance" ] = { value: 1.0 }
         this.velocityUniforms[ "alignmentDistance" ] = { value: 1.0 }
         this.velocityUniforms[ "cohesionDistance" ] = { value: 1.0 }
-        this.velocityUniforms[ "freedomFactor" ] = { value: 0.0 }
+        this.velocityUniforms[ "freedomFactor" ] = { value: 1.0 }
         this.velocityUniforms[ "predator" ] = { value: new Vector3() }
         this.velocityUniforms[ "flyToTarget" ] = { value: false }
         this.velocityUniforms[ "formationTexture" ] = { value: this.dtFormation }
@@ -43,14 +43,13 @@ class ComputationRender{
         if ( error !== null ) console.error( error )
     }
 
-    makeFormation( c, d ){
+    makeFormation( c){
         var points = c
-        var dims = d
         var theArray = this.dtFormation.image.data
         
         points.forEach( ( p, i ) => {
-            theArray[ i * 4 ] = ( p.x - d.w / 2 ) / d.w * 512 * 0.643
-            theArray[ i * 4 + 1 ] = -( p.y - d.h / 2 ) / d.h * 150 * 0.643
+            theArray[ i * 4 ] = p.x 
+            theArray[ i * 4 + 1 ] = -p.y
             theArray[ i * 4 + 2 ] = p.rotation
             theArray[ i * 4 + 3 ] = 1
         } )
