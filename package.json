@@ -23,6 +23,7 @@
     "event-emitter-es6": "^1.1.5",
     "orbit-controls-es6": "^2.0.0",
     "p5": "^0.9.0",
+    "stats-js": "^1.0.1",
     "three": "^0.107.0",
     "three-gltf-loader": "^1.107.0"
   }

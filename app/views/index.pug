@@ -14,11 +14,13 @@ html
                 button#lorem( data-type = 'text', data-content='lorem', data-current='0', data-string='LOREM IPSUM DOLOR SANTI AMET DANI ELIT RAIMOND') Lorem
                 button.emoji( data-type = 'icon', data-content='smiley') 
                     span 😀
-                button.emoji( data-type = 'icon', data-id='thumb')
+                button.emoji( data-type = 'icon', data-content='thumb')
                     span 👍
-                button( data-type = 'reset', data-id='none' ) x
+                button( data-type = 'reset', data-content='none' ) x
             div 
                 span Animation 
                 button( data-type = 'animation', data-id='lorem') Tiger
                 button( data-type = 'animation', data-id='lorem') Bird
+
+            #performance
         script( src = '../js/index.js' )

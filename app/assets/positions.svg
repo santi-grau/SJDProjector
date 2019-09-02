@@ -5,73 +5,66 @@
 	 xml:space="preserve">
 <style type="text/css">
 	.st0{stroke:#FF0000;stroke-width:0.25;stroke-miterlimit:10;}
-	.st1{display:none;}
-	.st2{display:inline;fill:#00FF00;}
-	.st3{display:inline;}
-	.st4{display:inline;fill:#FF0000;}
-	.st5{display:inline;fill:#0000FF;}
-	.st6{font-family:'Ciutadella-SemiBold';}
-	.st7{font-size:187px;}
-	.st8{display:inline;opacity:0.72;}
+	.st1{display:none;fill:#00FF00;}
+	.st2{display:none;}
+	.st3{display:none;fill:#FF0000;}
+	.st4{display:none;fill:#0000FF;}
+	.st5{font-family:'Ciutadella-SemiBold';}
+	.st6{font-size:187px;}
 </style>
 <symbol  id="New_Symbol" viewBox="-10.8 -8.1 21.5 16.2">
 	<polygon class="st0" points="0,7.9 -1.1,6.5 -1.1,5.9 -1.5,4.1 -3.4,4.3 -5.9,4 -9.8,2.4 -10.6,1.3 -9.4,0.3 -6.5,-2.2 -1.4,-3 
 		-1.3,-5.1 -2.5,-7.6 0,-8 2.5,-7.6 1.3,-5.1 1.4,-3 6.5,-2.2 9.4,0.3 10.6,1.3 9.8,2.4 5.9,4 3.4,4.3 1.5,4.1 1.1,5.9 1.1,6.5 	"/>
 </symbol>
-<g id="Layer_1" class="st1">
-	<path class="st2" d="M32.3,211.8h47.9v20.9H9V110.2h23.3L32.3,211.8L32.3,211.8z"/>
-	<path class="st3" d="M30.6,155.9v76.8H9V110.2h19.9l29.3,53.3l28.9-53.3H107v122.4H84.4v-76.2l-19.9,36.1H51.1L30.6,155.9z"/>
-	<path class="st3" d="M93.7,191.5v3.5c0,24.8-16.8,40.2-41.8,40.2C26.6,235.2,9,219.5,9,194.4v-44.5c0-25.2,15.5-40.8,42.9-40.8
+<g id="Layer_1">
+	<path class="st1" d="M32.3,211.8h47.9v20.9H9V110.2h23.3L32.3,211.8L32.3,211.8z"/>
+	<path class="st2" d="M30.6,155.9v76.8H9V110.2h19.9l29.3,53.3l28.9-53.3H107v122.4H84.4v-76.2l-19.9,36.1H51.1L30.6,155.9z"/>
+	<path class="st2" d="M93.7,191.5v3.5c0,24.8-16.8,40.2-41.8,40.2C26.6,235.2,9,219.5,9,194.4v-44.5c0-25.2,15.5-40.8,42.9-40.8
 		c25,0,41.8,15.5,41.8,40.3v3H71.3v-2.8c0-11.7-7.3-19.6-19.8-19.6c-11.9,0-19.2,8-19.2,20.3v43.8c0,12.3,7.3,20.3,19.2,20.3
 		c12.5,0,19.8-7.8,19.8-19.6v-3.3H93.7L93.7,191.5z"/>
-	<path class="st3" d="M95.5,152v38.9c0,25.7-16.4,41.8-44.2,41.8H9V110.3h42.3C79.1,110.3,95.5,126.3,95.5,152z M32.3,131.1v80.7h19
+	<path class="st2" d="M95.5,152v38.9c0,25.7-16.4,41.8-44.2,41.8H9V110.3h42.3C79.1,110.3,95.5,126.3,95.5,152z M32.3,131.1v80.7h19
 		c13.4,0,20.9-8.2,20.9-21.2v-38.2c0-13.1-7.5-21.2-20.9-21.2C51.3,131.1,32.3,131.1,32.3,131.1z"/>
-	<path class="st3" d="M32.3,180.7v31.1h52.9v20.9H9V110.3h74.6v20.9H32.4v29.1h45.8v20.5L32.3,180.7L32.3,180.7z"/>
-	<path class="st3" d="M32.3,184.1v48.6H9V110.3h74.6v20.9H32.4v32.2h45.8v20.7H32.3z"/>
-	<path class="st3" d="M54.2,171.1h39.5V195c0,24.8-16.8,40.2-41.8,40.2C26.6,235.2,9,219.6,9,194.4v-44.5
+	<path class="st2" d="M32.3,180.7v31.1h52.9v20.9H9V110.3h74.6v20.9H32.4v29.1h45.8v20.5L32.3,180.7L32.3,180.7z"/>
+	<path class="st2" d="M32.3,184.1v48.6H9V110.3h74.6v20.9H32.4v32.2h45.8v20.7H32.3z"/>
+	<path class="st2" d="M54.2,171.1h39.5V195c0,24.8-16.8,40.2-41.8,40.2C26.6,235.2,9,219.6,9,194.4v-44.5
 		c0-25.2,16.2-40.8,43.2-40.8c25,0,41.4,14.7,41.4,38.4v3H71.2v-2.8c0-10.6-6.7-17.7-19.2-17.7s-19.8,8-19.8,20.3v43.8
 		c0,12.3,7.3,20.3,19.4,20.3c13,0,20.3-7.8,20.3-19.6v-5.4H54v-18.3H54.2z"/>
-	<path class="st2" d="M93.4,232.7H70.1v-51.8H32.3v51.8H9V110.2h23.3V160h37.8v-49.8h23.3V232.7z"/>
-	<path class="st4" d="M32.3,232.7H9V110.2h23.3V232.7z"/>
-	<path class="st5" d="M32.1,193.3v4.5c0,10.1,5.6,16.6,15.3,16.6c9.9,0,15.3-6.5,15.3-16.6v-86.9H86v87.2
+	<path class="st1" d="M93.4,232.7H70.1v-51.8H32.3v51.8H9V110.2h23.3V160h37.8v-49.8h23.3V232.7z"/>
+	<path class="st3" d="M32.3,232.7H9V110.2h23.3V232.7z"/>
+	<path class="st4" d="M32.1,193.3v4.5c0,10.1,5.6,16.6,15.3,16.6c9.9,0,15.3-6.5,15.3-16.6v-86.9H86v87.2
 		c0,22.9-15.7,37.1-38.6,37.1S9,221,9,198.1v-4.9L32.1,193.3L32.1,193.3z"/>
-	<path class="st2" d="M32.3,168.7l37.5-58.5h25.9l-32,50.9l33.2,71.6H70.7l-23.5-52.2l-14.9,23.3v28.9H9V110.2h23.3V168.7
+	<path class="st1" d="M32.3,168.7l37.5-58.5h25.9l-32,50.9l33.2,71.6H70.7l-23.5-52.2l-14.9,23.3v28.9H9V110.2h23.3V168.7
 		L32.3,168.7z"/>
 	
-		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(1 0 0 -1 122.491 267.9683)" style="display:inline;overflow:visible;"/>
-	<text transform="matrix(1 0 0 1 8.9911 232.7)" class="st3 st6 st7">K</text>
-	<path class="st2" d="M95.6,193.6c0,25.2-17.6,41-43.2,41c-25.8,0-43.4-15.7-43.4-41v-44.7c0-25.2,15.5-41,43.4-41
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(1 0 0 -1 122.491 267.9683)" style="display:none;overflow:visible;"/>
+	<text transform="matrix(1 0 0 1 8.9911 232.7)" class="st2 st5 st6">K</text>
+	<path class="st1" d="M95.6,193.6c0,25.2-17.6,41-43.2,41c-25.8,0-43.4-15.7-43.4-41v-44.7c0-25.2,15.5-41,43.4-41
 		c25.6,0,43.2,15.7,43.2,41V193.6z M32.4,193.2c0,12.3,7.3,20.4,20,20.4c12.5,0,19.8-8,19.8-20.4v-43.9c0-12.3-7.3-20.4-19.8-20.4
 		c-12.7,0-20,8-20,20.4V193.2z"/>
-	<path class="st2" d="M9,109.8h42.8c24.5,0,42.4,15.9,42.4,39.8c0,25.2-18,41.1-42.4,41.1H32.4v41.9H9V109.8z M32.4,130.2v40.2h17.4
+	<path class="st1" d="M9,109.8h42.8c24.5,0,42.4,15.9,42.4,39.8c0,25.2-18,41.1-42.4,41.1H32.4v41.9H9V109.8z M32.4,130.2v40.2h17.4
 		c12.9,0,20.8-7.9,20.8-20.2c0-12.2-7.9-20-20.8-20H32.4z"/>
-	<path class="st2" d="M95.6,193.6c0,15.7-6.9,27.9-18.3,34.8l18.1,29.2H68.5l-14.2-23.2c-0.6,0.2-1.3,0.2-1.9,0.2
+	<path class="st1" d="M95.6,193.6c0,15.7-6.9,27.9-18.3,34.8l18.1,29.2H68.5l-14.2-23.2c-0.6,0.2-1.3,0.2-1.9,0.2
 		c-25.8,0-43.4-15.7-43.4-41v-44.7c0-25.2,15.5-41,43.4-41c25.6,0,43.2,15.7,43.2,41V193.6z M32.4,193.2c0,12.3,7.3,20.4,20,20.4
 		c12.5,0,19.8-8,19.8-20.4v-43.9c0-12.3-7.3-20.4-19.8-20.4c-12.7,0-20,8-20,20.4V193.2z"/>
-	<path class="st2" d="M69.6,232.7l-17.8-45.1H32.4v45.1H9V109.8h43.2c24.3,0,42.1,15.1,42.1,38.1c0,15.9-7.5,27.9-19.4,34.2
+	<path class="st1" d="M69.6,232.7l-17.8-45.1H32.4v45.1H9V109.8h43.2c24.3,0,42.1,15.1,42.1,38.1c0,15.9-7.5,27.9-19.4,34.2
 		L95,232.7H69.6z M32.4,130.2v37h17.4c12.9,0,20.8-7.3,20.8-18.7c0-11.2-7.9-18.3-20.8-18.3H32.4z"/>
-	<path class="st2" d="M68.6,146.9v-3.6c0-9.5-6.9-16.1-17.8-16.1c-10.7,0-16.6,5.8-16.6,13.7c0,4.9,2.6,10.7,11.6,13.8l17.4,6.4
+	<path class="st1" d="M68.6,146.9v-3.6c0-9.5-6.9-16.1-17.8-16.1c-10.7,0-16.6,5.8-16.6,13.7c0,4.9,2.6,10.7,11.6,13.8l17.4,6.4
 		c15.3,5.6,30.9,13.3,30.9,35.9c0,22.3-16.6,37.6-42.1,37.6c-25.2,0-43-13.8-43-36.3v-4.1h23v5c0,9.9,7.3,15.9,19.4,15.9
 		c12.9,0,19.8-6.5,19.8-15.5c0-7.7-4.5-12.9-13.5-16.1l-18.7-7.1c-17.2-6.4-27.5-16.5-27.5-33.8c0-18.9,14.8-34.6,39.3-34.6
 		c24.3,0,40.6,13.8,40.6,36.3v2.6H68.6z"/>
-	<path class="st2" d="M9,109.8h82.1v20.9H61.7v101.9H38.5V130.8H9V109.8z"/>
-	<path class="st2" d="M93.1,109.8v83.8c0,25.2-17,41-42.1,41S9,218.9,9,193.6v-83.8h23.2v83.4c0,12.3,6.9,20.4,18.9,20.4
+	<path class="st1" d="M9,109.8h82.1v20.9H61.7v101.9H38.5V130.8H9V109.8z"/>
+	<path class="st1" d="M93.1,109.8v83.8c0,25.2-17,41-42.1,41S9,218.9,9,193.6v-83.8h23.2v83.4c0,12.3,6.9,20.4,18.9,20.4
 		c11.8,0,18.9-8,18.9-20.4v-83.4H93.1z"/>
-	<path class="st2" d="M100.8,109.8L67.3,232.7H42.5L9,109.8h24.7l21.9,88.4l21.7-88.4H100.8z"/>
-	<path class="st2" d="M135.8,109.8l-26,122.9H88.3l-16.1-83.2l-15.9,83.2H35L9,109.8h23.4l14.4,82.3l15.3-82.3h21.5l15.3,82.5
+	<path class="st1" d="M100.8,109.8L67.3,232.7H42.5L9,109.8h24.7l21.9,88.4l21.7-88.4H100.8z"/>
+	<path class="st1" d="M135.8,109.8l-26,122.9H88.3l-16.1-83.2l-15.9,83.2H35L9,109.8h23.4l14.4,82.3l15.3-82.3h21.5l15.3,82.5
 		l14.6-82.5H135.8z"/>
-	<path class="st2" d="M83.3,109.8l20.2,38.5l19.8-38.5h23.6L114.8,168l34.8,64.7h-25.1l-23.2-44.1l-21.9,44.1H55.7l33.8-64.3
+	<path class="st1" d="M83.3,109.8l20.2,38.5l19.8-38.5h23.6L114.8,168l34.8,64.7h-25.1l-23.2-44.1l-21.9,44.1H55.7l33.8-64.3
 		l-31.4-58.5H83.3z"/>
-	<path class="st2" d="M96,109.8l22.1,50.7l22.1-50.7h23.6L129.1,183v49.7h-23.2v-49.4l-34.6-73.5H96z"/>
-	<path class="st2" d="M53.4,109.8h72.9v14.8L80,212.1h47.5v20.6H51.8v-14.8l46.4-87.5H53.4V109.8z"/>
-	<path class="st2" d="M93,232.7H73.9l-43.6-77.6v77.6H9V109.8h20l42.6,75.7v-75.7H93V232.7z"/>
-	<g class="st8">
-		
-			<image style="overflow:visible;" width="500" height="500" id="N2Kzk4" xlink:href="90276F55A4E97AA2.jpg"  transform="matrix(0.8384 0 0 0.8384 -24.9951 23.1049)">
-		</image>
-	</g>
+	<path class="st1" d="M96,109.8l22.1,50.7l22.1-50.7h23.6L129.1,183v49.7h-23.2v-49.4l-34.6-73.5H96z"/>
+	<path class="st1" d="M53.4,109.8h72.9v14.8L80,212.1h47.5v20.6H51.8v-14.8l46.4-87.5H53.4V109.8z"/>
+	<path class="st1" d="M93,232.7H73.9l-43.6-77.6v77.6H9V109.8h20l42.6,75.7v-75.7H93V232.7z"/>
 </g>
-<g id="A_1_" class="st1">
+<g id="A_1_" class="st2">
 	
 		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.2203 0.8861 0.8861 -0.2203 249.7859 140.1967)" style="display:inline;overflow:visible;"/>
 	
@@ -123,7 +116,7 @@
 	
 		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.8112 0.3933 0.3933 -0.8112 212.4112 206.141)" style="display:inline;overflow:visible;"/>
 </g>
-<g id="B_1_" class="st1">
+<g id="B_1_" class="st2">
 	
 		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.948 0.2572 0.2572 -0.948 249.7373 179.3532)" style="display:inline;overflow:visible;"/>
 	
@@ -175,7 +168,7 @@
 	
 		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.6434 0.6359 0.6359 0.6434 259.2325 217.9777)" style="display:inline;overflow:visible;"/>
 </g>
-<g id="C_1_" class="st1">
+<g id="C_1_" class="st2">
 	
 		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.8222 0.4026 0.4026 -0.8222 226.871 113.7074)" style="display:inline;overflow:visible;"/>
 	
@@ -213,7 +206,7 @@
 	
 		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.8161 0.4183 0.4183 0.8161 254.5126 199.8286)" style="display:inline;overflow:visible;"/>
 </g>
-<g id="D_1_" class="st1">
+<g id="D_1_" class="st2">
 	
 		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.5478 -0.8332 -0.8332 -0.5478 191.4328 162.8432)" style="display:inline;overflow:visible;"/>
 	
@@ -263,7 +256,7 @@
 	
 		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.4551 -0.8825 -0.8825 0.4551 252.3816 210.342)" style="display:inline;overflow:visible;"/>
 </g>
-<g id="E" class="st1">
+<g id="E" class="st2">
 	
 		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.3775 -0.8735 -0.8735 -0.3775 192.0366 222.7696)" style="display:inline;overflow:visible;"/>
 	
@@ -309,7 +302,7 @@
 	
 		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.2739 -0.9398 -0.9398 0.2739 189.1189 165.941)" style="display:inline;overflow:visible;"/>
 </g>
-<g id="F_1_" class="st1">
+<g id="F_1_" class="st2">
 	
 		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(5.760000e-02 -0.9462 -0.9462 -5.760000e-02 192.0549 206.2388)" style="display:inline;overflow:visible;"/>
 	
@@ -345,7 +338,7 @@
 	
 		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.8791 -0.27 -0.27 -0.8791 234.1369 115.4341)" style="display:inline;overflow:visible;"/>
 </g>
-<g id="G_1_" class="st1">
+<g id="G_1_" class="st2">
 	
 		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.7581 -0.5945 -0.5945 0.7581 230.1085 118.9935)" style="display:inline;overflow:visible;"/>
 	
@@ -391,7 +384,7 @@
 	
 		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.6883 -0.6908 -0.6908 -0.6883 200.8026 200.7055)" style="display:inline;overflow:visible;"/>
 </g>
-<g id="H" class="st1">
+<g id="H" class="st2">
 	
 		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.1368 -0.8913 -0.8913 -0.1368 190.6954 127.0417)" style="display:inline;overflow:visible;"/>
 	
@@ -441,7 +434,7 @@
 	
 		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.7347 -0.5383 -0.5383 -0.7347 260.7754 226.2013)" style="display:inline;overflow:visible;"/>
 </g>
-<g id="I" class="st1">
+<g id="I" class="st2">
 	
 		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.4775 0.8483 0.8483 0.4775 201.0122 222.1038)" style="display:inline;overflow:visible;"/>
 	
@@ -473,7 +466,7 @@
 	
 		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(2.749190e-02 -0.7265 -0.7265 -2.749190e-02 201.9703 158.4513)" style="display:inline;overflow:visible;"/>
 </g>
-<g id="J" class="st1">
+<g id="J" class="st2">
 	
 		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.1008 0.9278 0.9278 -0.1008 206.9623 223.2984)" style="display:inline;overflow:visible;"/>
 	
@@ -513,7 +506,7 @@
 	
 		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.1926 0.9621 0.9621 -0.1926 205.2559 203.3993)" style="display:inline;overflow:visible;"/>
 </g>
-<g id="K" class="st1">
+<g id="K" class="st2">
 	
 		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.2501 -0.9442 -0.9442 -0.2501 213.9164 175.5966)" style="display:inline;overflow:visible;"/>
 	
@@ -575,7 +568,7 @@
 	
 		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.8177 -0.4097 -0.4097 0.8177 240.6422 145.7029)" style="display:inline;overflow:visible;"/>
 </g>
-<g id="L" class="st1">
+<g id="L" class="st2">
 	
 		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.4517 0.8887 0.8887 0.4517 201.1595 184.4093)" style="display:inline;overflow:visible;"/>
 	
@@ -615,7 +608,7 @@
 	
 		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.2416 0.8909 0.8909 0.2416 191.9361 130.2916)" style="display:inline;overflow:visible;"/>
 </g>
-<g id="M" class="st1">
+<g id="M" class="st2">
 	
 		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.6277 -0.7503 -0.7503 -0.6277 192.8457 119.8133)" style="display:inline;overflow:visible;"/>
 	
@@ -683,7 +676,7 @@
 	
 		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.3959 0.8942 0.8942 0.3959 276.1031 133.2087)" style="display:inline;overflow:visible;"/>
 </g>
-<g id="N" class="st1">
+<g id="N" class="st2">
 	
 		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.7318 -0.6587 -0.6587 -0.7318 198.242 225.3044)" style="display:inline;overflow:visible;"/>
 	
@@ -753,7 +746,7 @@
 	
 		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.3943 -0.8193 -0.8193 0.3943 264.6015 145.9567)" style="display:inline;overflow:visible;"/>
 </g>
-<g id="O" class="st1">
+<g id="O" class="st2">
 	
 		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.9165 -0.2349 -0.2349 0.9165 260.1488 196.5886)" style="display:inline;overflow:visible;"/>
 	
@@ -819,7 +812,7 @@
 	
 		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(9.486073e-02 0.9855 0.9855 -9.486073e-02 266.1434 145.1556)" style="display:inline;overflow:visible;"/>
 </g>
-<g id="P" class="st1">
+<g id="P" class="st2">
 	
 		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.943 9.133052e-02 9.133052e-02 -0.943 193.5443 115.2864)" style="display:inline;overflow:visible;"/>
 	
@@ -873,7 +866,7 @@
 	
 		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.589 0.7202 0.7202 -0.589 190.1638 130.7253)" style="display:inline;overflow:visible;"/>
 </g>
-<g id="Q" class="st1">
+<g id="Q" class="st2">
 	
 		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.9165 0.2349 0.2349 -0.9165 195.7056 146.3761)" style="display:inline;overflow:visible;"/>
 	
@@ -947,7 +940,7 @@
 	
 		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-9.486073e-02 -0.9855 -0.9855 9.486073e-02 189.711 197.809)" style="display:inline;overflow:visible;"/>
 </g>
-<g id="R" class="st1">
+<g id="R" class="st2">
 	
 		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.943 9.133052e-02 9.133052e-02 -0.943 193.5443 115.2864)" style="display:inline;overflow:visible;"/>
 	
@@ -1015,7 +1008,7 @@
 	
 		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.589 0.7202 0.7202 -0.589 190.1638 130.7253)" style="display:inline;overflow:visible;"/>
 </g>
-<g id="S" class="st1">
+<g id="S" class="st2">
 	
 		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.8841 -0.2336 -0.2336 -0.8841 192.1832 200.883)" style="display:inline;overflow:visible;"/>
 	
@@ -1075,7 +1068,7 @@
 	
 		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.9076 -0.3088 -0.3088 -0.9076 195.7132 133.3896)" style="display:inline;overflow:visible;"/>
 </g>
-<g id="T" class="st1">
+<g id="T" class="st2">
 	
 		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.4775 -0.8483 -0.8483 -0.4775 220.4211 120.6178)" style="display:inline;overflow:visible;"/>
 	
@@ -1123,7 +1116,7 @@
 	
 		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.7261 7.837584e-03 7.837584e-03 -0.7261 242.5936 113.4974)" style="display:inline;overflow:visible;"/>
 </g>
-<g id="U" class="st1">
+<g id="U" class="st2">
 	
 		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-1.114304e-03 -0.7741 -0.7741 1.114304e-03 251.8186 158.4733)" style="display:inline;overflow:visible;"/>
 	
@@ -1185,7 +1178,7 @@
 	
 		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.533 0.8238 -0.8238 -0.533 250.197 197.3586)" style="display:inline;overflow:visible;"/>
 </g>
-<g id="V" class="st1">
+<g id="V" class="st2">
 	
 		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.8065 -0.4045 -0.4045 0.8065 235.0163 226.1381)" style="display:inline;overflow:visible;"/>
 	
@@ -1239,7 +1232,7 @@
 	
 		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.1214 0.9828 0.9828 0.1214 225.6283 194.9345)" style="display:inline;overflow:visible;"/>
 </g>
-<g id="W" class="st1">
+<g id="W" class="st2">
 	
 		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.8475 -0.3601 -0.3601 -0.8475 195.4978 117.1919)" style="display:inline;overflow:visible;"/>
 	
@@ -1325,7 +1318,7 @@
 	
 		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.2257 -0.8055 -0.8055 0.2257 282.609 173.9512)" style="display:inline;overflow:visible;"/>
 </g>
-<g id="X" class="st1">
+<g id="X" class="st2">
 	
 		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-1.962112e-02 -0.9057 -0.9057 1.962112e-02 265.7758 117.2628)" style="display:inline;overflow:visible;"/>
 	
@@ -1379,7 +1372,7 @@
 	
 		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.7454 0.6068 0.6068 0.7454 224.1315 166.7879)" style="display:inline;overflow:visible;"/>
 </g>
-<g id="Y" class="st1">
+<g id="Y" class="st2">
 	
 		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.8733 0.4414 0.4414 -0.8733 195.7622 116.744)" style="display:inline;overflow:visible;"/>
 	
@@ -1421,7 +1414,7 @@
 	
 		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.4705 0.6582 0.6582 0.4705 269.4306 117.1021)" style="display:inline;overflow:visible;"/>
 </g>
-<g id="Z" class="st1">
+<g id="Z" class="st2">
 	
 		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.4951 -0.8485 -0.8485 -0.4951 232.084 142.642)" style="display:inline;overflow:visible;"/>
 	
@@ -1479,278 +1472,462 @@
 	
 		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.4308 -0.7386 -0.7386 0.4308 241.5538 219.2854)" style="display:inline;overflow:visible;"/>
 </g>
-<g id="smiley">
+<g id="smiley" class="st2">
 	
-		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.6113 0.7053 0.7053 0.6113 328.6836 266.8936)" style="overflow:visible;"/>
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.6113 0.7053 0.7053 0.6113 328.6836 266.8936)" style="display:inline;overflow:visible;"/>
 	
-		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.942 0.2305 0.2305 -0.942 327.0092 282.4284)" style="overflow:visible;"/>
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.942 0.2305 0.2305 -0.942 327.0092 282.4284)" style="display:inline;overflow:visible;"/>
 	
-		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.3132 0.8893 0.8893 0.3132 315.951 322.9381)" style="overflow:visible;"/>
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.3132 0.8893 0.8893 0.3132 315.951 322.9381)" style="display:inline;overflow:visible;"/>
 	
-		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.4402 -0.8286 -0.8286 -0.4402 301.5789 321.9614)" style="overflow:visible;"/>
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.4402 -0.8286 -0.8286 -0.4402 301.5789 321.9614)" style="display:inline;overflow:visible;"/>
 	
-		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.3171 -0.7949 -0.7949 0.3171 60.6877 332.1875)" style="overflow:visible;"/>
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.3171 -0.7949 -0.7949 0.3171 60.6877 332.1875)" style="display:inline;overflow:visible;"/>
 	
-		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.8096 0.4465 0.4465 -0.8096 163.5296 388.5082)" style="overflow:visible;"/>
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.8096 0.4465 0.4465 -0.8096 163.5296 388.5082)" style="display:inline;overflow:visible;"/>
 	
-		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(8.966305e-02 -0.9827 -0.9827 -8.966305e-02 210.8065 384.0164)" style="overflow:visible;"/>
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(8.966305e-02 -0.9827 -0.9827 -8.966305e-02 210.8065 384.0164)" style="display:inline;overflow:visible;"/>
 	
-		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.6093 -0.7023 -0.7023 -0.6093 229.8527 384.1656)" style="overflow:visible;"/>
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.6093 -0.7023 -0.7023 -0.6093 229.8527 384.1656)" style="display:inline;overflow:visible;"/>
 	
-		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.7685 0.5891 0.5891 -0.7685 321.6688 306.9856)" style="overflow:visible;"/>
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.7685 0.5891 0.5891 -0.7685 321.6688 306.9856)" style="display:inline;overflow:visible;"/>
 	
-		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.4516 0.7903 0.7903 -0.4516 67.8976 323.0263)" style="overflow:visible;"/>
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.4516 0.7903 0.7903 -0.4516 67.8976 323.0263)" style="display:inline;overflow:visible;"/>
 	
-		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-1.247979e-02 0.933 0.933 1.247979e-02 338.6556 274.4657)" style="overflow:visible;"/>
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-1.247979e-02 0.933 0.933 1.247979e-02 338.6556 274.4657)" style="display:inline;overflow:visible;"/>
 	
-		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.7931 -0.1818 -0.1818 -0.7931 147.9512 389.2313)" style="overflow:visible;"/>
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.7931 -0.1818 -0.1818 -0.7931 147.9512 389.2313)" style="display:inline;overflow:visible;"/>
 	
-		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(8.387569e-02 0.9399 0.9399 -8.387569e-02 309.7371 308.5103)" style="overflow:visible;"/>
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(8.387569e-02 0.9399 0.9399 -8.387569e-02 309.7371 308.5103)" style="display:inline;overflow:visible;"/>
 	
-		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.8394 -0.3668 -0.3668 -0.8394 303.0859 336.2777)" style="overflow:visible;"/>
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.8394 -0.3668 -0.3668 -0.8394 303.0859 336.2777)" style="display:inline;overflow:visible;"/>
 	
-		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-8.646271e-02 -0.8819 -0.8819 8.646271e-02 44.3902 306.175)" style="overflow:visible;"/>
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-8.646271e-02 -0.8819 -0.8819 8.646271e-02 44.3902 306.175)" style="display:inline;overflow:visible;"/>
 	
-		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.9383 6.596319e-02 6.596319e-02 0.9383 152.4785 377.6006)" style="overflow:visible;"/>
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.9383 6.596319e-02 6.596319e-02 0.9383 152.4785 377.6006)" style="display:inline;overflow:visible;"/>
 	
-		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.8544 6.218816e-02 6.218816e-02 -0.8544 221.0791 375.759)" style="overflow:visible;"/>
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.8544 6.218816e-02 6.218816e-02 -0.8544 221.0791 375.759)" style="display:inline;overflow:visible;"/>
 	
-		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.3151 0.7879 0.7879 -0.3151 317.8798 292.7621)" style="overflow:visible;"/>
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.3151 0.7879 0.7879 -0.3151 317.8798 292.7621)" style="display:inline;overflow:visible;"/>
 	
-		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.2301 -0.9513 -0.9513 0.2301 346.263 236.8063)" style="overflow:visible;"/>
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.2301 -0.9513 -0.9513 0.2301 346.263 236.8063)" style="display:inline;overflow:visible;"/>
 	
-		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.7638 -0.5957 -0.5957 -0.7638 43.6096 290.4507)" style="overflow:visible;"/>
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.7638 -0.5957 -0.5957 -0.7638 43.6096 290.4507)" style="display:inline;overflow:visible;"/>
 	
-		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.7649 -0.6868 -0.6868 -0.7649 137.5734 378.669)" style="overflow:visible;"/>
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.7649 -0.6868 -0.6868 -0.7649 137.5734 378.669)" style="display:inline;overflow:visible;"/>
 	
-		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-1.492417e-02 0.9457 0.9457 1.492417e-02 42.7453 271.2424)" style="overflow:visible;"/>
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-1.492417e-02 0.9457 0.9457 1.492417e-02 42.7453 271.2424)" style="display:inline;overflow:visible;"/>
 	
-		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.6625 0.5149 0.5149 -0.6625 86.2545 358.6469)" style="overflow:visible;"/>
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.6625 0.5149 0.5149 -0.6625 86.2545 358.6469)" style="display:inline;overflow:visible;"/>
 	
-		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.292 0.8715 0.8715 0.292 330.8487 294.8359)" style="overflow:visible;"/>
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.292 0.8715 0.8715 0.292 330.8487 294.8359)" style="display:inline;overflow:visible;"/>
 	
-		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.1937 0.9064 0.9064 -0.1937 54.9977 300.0875)" style="overflow:visible;"/>
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.1937 0.9064 0.9064 -0.1937 54.9977 300.0875)" style="display:inline;overflow:visible;"/>
 	
-		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-1.0426 8.898087e-02 8.898087e-02 1.0426 85.9389 345.1224)" style="overflow:visible;"/>
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-1.0426 8.898087e-02 8.898087e-02 1.0426 85.9389 345.1224)" style="display:inline;overflow:visible;"/>
 	
-		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.779 0.5911 0.5911 0.779 73.0115 338.1245)" style="overflow:visible;"/>
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.779 0.5911 0.5911 0.779 73.0115 338.1245)" style="display:inline;overflow:visible;"/>
 	
-		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.9199 4.636407e-02 4.636407e-02 -0.9199 195.5551 377.4738)" style="overflow:visible;"/>
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.9199 4.636407e-02 4.636407e-02 -0.9199 195.5551 377.4738)" style="display:inline;overflow:visible;"/>
 	
-		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.9644 2.755063e-02 2.755063e-02 -0.9644 173.2571 379.6841)" style="overflow:visible;"/>
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.9644 2.755063e-02 2.755063e-02 -0.9644 173.2571 379.6841)" style="display:inline;overflow:visible;"/>
 	
-		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.9385 -0.1524 -0.1524 -0.9385 32.465 235.5916)" style="overflow:visible;"/>
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.9385 -0.1524 -0.1524 -0.9385 32.465 235.5916)" style="display:inline;overflow:visible;"/>
 	
-		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.5432 0.7609 0.7609 -0.5432 38.1579 221.4112)" style="overflow:visible;"/>
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.5432 0.7609 0.7609 -0.5432 38.1579 221.4112)" style="display:inline;overflow:visible;"/>
 	
-		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.9648 -0.426 -0.426 -0.9648 337.5241 254.7104)" style="overflow:visible;"/>
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.9648 -0.426 -0.426 -0.9648 337.5241 254.7104)" style="display:inline;overflow:visible;"/>
 	
-		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.5935 0.7034 0.7034 0.5935 195.6567 390.7819)" style="overflow:visible;"/>
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.5935 0.7034 0.7034 0.5935 195.6567 390.7819)" style="display:inline;overflow:visible;"/>
 	
-		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.924 0.3265 0.3265 -0.924 25.6091 248.1041)" style="overflow:visible;"/>
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.924 0.3265 0.3265 -0.924 25.6091 248.1041)" style="display:inline;overflow:visible;"/>
 	
-		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(1.294800e-02 0.9455 0.9455 -1.294800e-02 27.5934 209.678)" style="overflow:visible;"/>
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(1.294800e-02 0.9455 0.9455 -1.294800e-02 27.5934 209.678)" style="display:inline;overflow:visible;"/>
 	
-		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.4734 0.7471 0.7471 -0.4734 331.4626 227.3042)" style="overflow:visible;"/>
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.4734 0.7471 0.7471 -0.4734 331.4626 227.3042)" style="display:inline;overflow:visible;"/>
 	
-		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-5.506361e-02 -0.9719 -0.9719 5.506361e-02 32.9625 281.9364)" style="overflow:visible;"/>
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-5.506361e-02 -0.9719 -0.9719 5.506361e-02 32.9625 281.9364)" style="display:inline;overflow:visible;"/>
 	
-		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.7344 -0.6483 -0.6483 -0.7344 181.8906 389.1874)" style="overflow:visible;"/>
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.7344 -0.6483 -0.6483 -0.7344 181.8906 389.1874)" style="display:inline;overflow:visible;"/>
 	
-		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.8262 0.44 0.44 -0.8262 37.0312 191.8015)" style="overflow:visible;"/>
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.8262 0.44 0.44 -0.8262 37.0312 191.8015)" style="display:inline;overflow:visible;"/>
 	
-		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.4647 0.626 0.626 -0.4647 316.2688 143.9706)" style="overflow:visible;"/>
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.4647 0.626 0.626 -0.4647 316.2688 143.9706)" style="display:inline;overflow:visible;"/>
 	
-		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-5.070509e-02 0.7095 0.7095 5.070509e-02 39.0752 245.7343)" style="overflow:visible;"/>
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-5.070509e-02 0.7095 0.7095 5.070509e-02 39.0752 245.7343)" style="display:inline;overflow:visible;"/>
 	
-		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.8471 -0.3732 -0.3732 -0.8471 55.7082 315.5188)" style="overflow:visible;"/>
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.8471 -0.3732 -0.3732 -0.8471 55.7082 315.5188)" style="display:inline;overflow:visible;"/>
 	
-		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.832 4.503437e-02 4.503437e-02 0.832 130.0188 367.5798)" style="overflow:visible;"/>
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.832 4.503437e-02 4.503437e-02 0.832 130.0188 367.5798)" style="display:inline;overflow:visible;"/>
 	
-		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.779 -0.137 -0.137 -0.779 122.9085 378.4643)" style="overflow:visible;"/>
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.779 -0.137 -0.137 -0.779 122.9085 378.4643)" style="display:inline;overflow:visible;"/>
 	
-		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.7796 0.553 0.553 0.7796 34.3435 260.1853)" style="overflow:visible;"/>
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.7796 0.553 0.553 0.7796 34.3435 260.1853)" style="display:inline;overflow:visible;"/>
 	
-		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.8685 -0.3341 -0.3341 0.8685 100.2167 354.5421)" style="overflow:visible;"/>
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.8685 -0.3341 -0.3341 0.8685 100.2167 354.5421)" style="display:inline;overflow:visible;"/>
 	
-		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.497 0.8648 0.8648 0.497 49.1694 178.122)" style="overflow:visible;"/>
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.497 0.8648 0.8648 0.497 49.1694 178.122)" style="display:inline;overflow:visible;"/>
 	
-		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.7686 0.5116 0.5116 -0.7686 47.5324 162.6478)" style="overflow:visible;"/>
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.7686 0.5116 0.5116 -0.7686 47.5324 162.6478)" style="display:inline;overflow:visible;"/>
 	
-		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.7621 -0.4816 -0.4816 0.7621 103.9061 367.4141)" style="overflow:visible;"/>
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.7621 -0.4816 -0.4816 0.7621 103.9061 367.4141)" style="display:inline;overflow:visible;"/>
 	
-		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.3099 -0.6599 -0.6599 0.3099 26.0201 223.5868)" style="overflow:visible;"/>
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.3099 -0.6599 -0.6599 0.3099 26.0201 223.5868)" style="display:inline;overflow:visible;"/>
 	
-		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.8778 -0.374 -0.374 0.8778 235.5673 188.737)" style="overflow:visible;"/>
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.8778 -0.374 -0.374 0.8778 235.5673 188.737)" style="display:inline;overflow:visible;"/>
 	
-		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.3204 -0.8988 -0.8988 0.3204 116.1324 364.689)" style="overflow:visible;"/>
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.3204 -0.8988 -0.8988 0.3204 116.1324 364.689)" style="display:inline;overflow:visible;"/>
 	
-		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.215 -0.9097 -0.9097 -0.215 179.1513 325.9298)" style="overflow:visible;"/>
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.215 -0.9097 -0.9097 -0.215 179.1513 325.9298)" style="display:inline;overflow:visible;"/>
 	
-		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.9377 -0.3135 -0.3135 -0.9377 197.6603 330.3529)" style="overflow:visible;"/>
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.9377 -0.3135 -0.3135 -0.9377 197.6603 330.3529)" style="display:inline;overflow:visible;"/>
 	
-		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.4471 0.7178 0.7178 0.4471 221.8701 180.121)" style="overflow:visible;"/>
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.4471 0.7178 0.7178 0.4471 221.8701 180.121)" style="display:inline;overflow:visible;"/>
 	
-		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.8299 0.5432 0.5432 -0.8299 333.3076 242.2787)" style="overflow:visible;"/>
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.8299 0.5432 0.5432 -0.8299 333.3076 242.2787)" style="display:inline;overflow:visible;"/>
 	
-		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.6747 -0.6363 -0.6363 0.6747 203.7796 316.4015)" style="overflow:visible;"/>
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.6747 -0.6363 -0.6363 0.6747 203.7796 316.4015)" style="display:inline;overflow:visible;"/>
 	
-		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.9448 -0.247 -0.247 0.9448 158.5173 326.2282)" style="overflow:visible;"/>
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.9448 -0.247 -0.247 0.9448 158.5173 326.2282)" style="display:inline;overflow:visible;"/>
 	
-		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.9452 1.640362e-02 1.640362e-02 -0.9452 168.2136 315.9571)" style="overflow:visible;"/>
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.9452 1.640362e-02 1.640362e-02 -0.9452 168.2136 315.9571)" style="display:inline;overflow:visible;"/>
 	
-		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.9556 0.174 0.174 -0.9556 137.2522 207.3438)" style="overflow:visible;"/>
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.9556 0.174 0.174 -0.9556 137.2522 207.3438)" style="display:inline;overflow:visible;"/>
 	
-		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.6955 -0.3268 -0.3268 -0.6955 40.3518 203.9208)" style="overflow:visible;"/>
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.6955 -0.3268 -0.3268 -0.6955 40.3518 203.9208)" style="display:inline;overflow:visible;"/>
 	
-		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.7007 -0.6613 -0.6613 0.7007 343.3314 220.6401)" style="overflow:visible;"/>
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.7007 -0.6613 -0.6613 0.7007 343.3314 220.6401)" style="display:inline;overflow:visible;"/>
 	
-		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.7584 0.5396 0.5396 0.7584 218.649 309.7767)" style="overflow:visible;"/>
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.7584 0.5396 0.5396 0.7584 218.649 309.7767)" style="display:inline;overflow:visible;"/>
 	
-		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.9192 -0.1079 -0.1079 -0.9192 220.3493 322.6789)" style="overflow:visible;"/>
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.9192 -0.1079 -0.1079 -0.9192 220.3493 322.6789)" style="display:inline;overflow:visible;"/>
 	
-		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.4128 0.8063 0.8063 0.4128 36.0667 176.0421)" style="overflow:visible;"/>
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.4128 0.8063 0.8063 0.4128 36.0667 176.0421)" style="display:inline;overflow:visible;"/>
 	
-		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(1.369283e-03 0.985 0.985 -1.369283e-03 339.3101 196.0743)" style="overflow:visible;"/>
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(1.369283e-03 0.985 0.985 -1.369283e-03 339.3101 196.0743)" style="display:inline;overflow:visible;"/>
 	
-		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.9576 -0.2113 -0.2113 0.9576 141.6892 317.9141)" style="overflow:visible;"/>
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.9576 -0.2113 -0.2113 0.9576 141.6892 317.9141)" style="display:inline;overflow:visible;"/>
 	
-		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.4529 0.6641 0.6641 -0.4529 152.0283 310.5299)" style="overflow:visible;"/>
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.4529 0.6641 0.6641 -0.4529 152.0283 310.5299)" style="display:inline;overflow:visible;"/>
 	
-		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.1476 0.8869 0.8869 -0.1476 240.9823 298.8176)" style="overflow:visible;"/>
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.1476 0.8869 0.8869 -0.1476 240.9823 298.8176)" style="display:inline;overflow:visible;"/>
 	
-		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.6554 -0.6547 -0.6547 0.6554 48.7368 147.234)" style="overflow:visible;"/>
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.6554 -0.6547 -0.6547 0.6554 48.7368 147.234)" style="display:inline;overflow:visible;"/>
 	
-		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.1682 0.9093 0.9093 0.1682 60.5399 134.1292)" style="overflow:visible;"/>
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.1682 0.9093 0.9093 0.1682 60.5399 134.1292)" style="display:inline;overflow:visible;"/>
 	
-		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.8453 -0.3309 -0.3309 0.8453 250.4879 290.0544)" style="overflow:visible;"/>
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.8453 -0.3309 -0.3309 0.8453 250.4879 290.0544)" style="display:inline;overflow:visible;"/>
 	
-		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.565 0.824 0.824 -0.565 233.4243 311.1956)" style="overflow:visible;"/>
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.565 0.824 0.824 -0.565 233.4243 311.1956)" style="display:inline;overflow:visible;"/>
 	
-		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.5307 -0.8205 -0.8205 -0.5307 149.1856 195.4365)" style="overflow:visible;"/>
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.5307 -0.8205 -0.8205 -0.5307 149.1856 195.4365)" style="display:inline;overflow:visible;"/>
 	
-		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.8295 -0.3991 -0.3991 -0.8295 75.8113 139.2196)" style="overflow:visible;"/>
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.8295 -0.3991 -0.3991 -0.8295 75.8113 139.2196)" style="display:inline;overflow:visible;"/>
 	
-		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.1094 -0.9441 -0.9441 -0.1094 263.909 288.6978)" style="overflow:visible;"/>
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.1094 -0.9441 -0.9441 -0.1094 263.909 288.6978)" style="display:inline;overflow:visible;"/>
 	
-		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.8438 -0.1848 -0.1848 0.8438 138.863 303.8562)" style="overflow:visible;"/>
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.8438 -0.1848 -0.1848 0.8438 138.863 303.8562)" style="display:inline;overflow:visible;"/>
 	
-		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.6697 0.6712 0.6712 0.6697 60.9641 152.4085)" style="overflow:visible;"/>
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.6697 0.6712 0.6712 0.6697 60.9641 152.4085)" style="display:inline;overflow:visible;"/>
 	
-		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.553 -0.8306 -0.8306 -0.553 85.6899 123.7485)" style="overflow:visible;"/>
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.553 -0.8306 -0.8306 -0.553 85.6899 123.7485)" style="display:inline;overflow:visible;"/>
 	
-		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.8268 0.4273 0.4273 0.8268 126.5154 296.1972)" style="overflow:visible;"/>
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.8268 0.4273 0.4273 0.8268 126.5154 296.1972)" style="display:inline;overflow:visible;"/>
 	
-		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.7964 0.4734 0.4734 -0.7964 189.2046 318.0295)" style="overflow:visible;"/>
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.7964 0.4734 0.4734 -0.7964 189.2046 318.0295)" style="display:inline;overflow:visible;"/>
 	
-		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.4903 0.814 0.814 -0.4903 270.1668 100.2573)" style="overflow:visible;"/>
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.4903 0.814 0.814 -0.4903 270.1668 100.2573)" style="display:inline;overflow:visible;"/>
 	
-		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.8276 0.4999 0.4999 -0.8276 306.3376 130.9444)" style="overflow:visible;"/>
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.8276 0.4999 0.4999 -0.8276 306.3376 130.9444)" style="display:inline;overflow:visible;"/>
 	
-		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.3437 -0.8653 -0.8653 -0.3437 332.2946 209.1029)" style="overflow:visible;"/>
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.3437 -0.8653 -0.8653 -0.3437 332.2946 209.1029)" style="display:inline;overflow:visible;"/>
 	
-		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.8562 0.2627 0.2627 -0.8562 125.6076 309.8896)" style="overflow:visible;"/>
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.8562 0.2627 0.2627 -0.8562 125.6076 309.8896)" style="display:inline;overflow:visible;"/>
 	
-		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.9301 -0.1109 -0.1109 0.9301 208.1558 87.3521)" style="overflow:visible;"/>
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.9301 -0.1109 -0.1109 0.9301 208.1558 87.3521)" style="display:inline;overflow:visible;"/>
 	
-		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.8469 -0.5074 -0.5074 0.8469 276.5648 114.8482)" style="overflow:visible;"/>
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.8469 -0.5074 -0.5074 0.8469 276.5648 114.8482)" style="display:inline;overflow:visible;"/>
 	
-		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.427 0.8294 0.8294 -0.427 292.0875 132.0225)" style="overflow:visible;"/>
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.427 0.8294 0.8294 -0.427 292.0875 132.0225)" style="display:inline;overflow:visible;"/>
 	
-		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.534 -0.7269 -0.7269 -0.534 73.1278 120.061)" style="overflow:visible;"/>
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.534 -0.7269 -0.7269 -0.534 73.1278 120.061)" style="display:inline;overflow:visible;"/>
 	
-		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.6138 0.6678 0.6678 -0.6138 104.0887 100.6992)" style="overflow:visible;"/>
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.6138 0.6678 0.6678 -0.6138 104.0887 100.6992)" style="display:inline;overflow:visible;"/>
 	
-		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.268 -0.8602 -0.8602 -0.268 319.0996 173.1853)" style="overflow:visible;"/>
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.268 -0.8602 -0.8602 -0.268 319.0996 173.1853)" style="display:inline;overflow:visible;"/>
 	
-		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.3984 -0.712 -0.712 0.3984 325.9811 159.7185)" style="overflow:visible;"/>
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.3984 -0.712 -0.712 0.3984 325.9811 159.7185)" style="display:inline;overflow:visible;"/>
 	
-		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.6602 -0.6134 -0.6134 0.6602 290.9553 116.0005)" style="overflow:visible;"/>
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.6602 -0.6134 -0.6134 0.6602 290.9553 116.0005)" style="display:inline;overflow:visible;"/>
 	
-		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.363 -0.8038 -0.8038 -0.363 313.3309 158.7572)" style="overflow:visible;"/>
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.363 -0.8038 -0.8038 -0.363 313.3309 158.7572)" style="display:inline;overflow:visible;"/>
 	
-		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.1973 0.9062 0.9062 -0.1973 331.1333 178.2339)" style="overflow:visible;"/>
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.1973 0.9062 0.9062 -0.1973 331.1333 178.2339)" style="display:inline;overflow:visible;"/>
 	
-		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(7.148305e-02 0.9337 0.9337 -7.148305e-02 248.3059 197.1366)" style="overflow:visible;"/>
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(7.148305e-02 0.9337 0.9337 -7.148305e-02 248.3059 197.1366)" style="display:inline;overflow:visible;"/>
 	
-		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.8318 0.5027 0.5027 0.8318 100.9812 114.1643)" style="overflow:visible;"/>
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.8318 0.5027 0.5027 0.8318 100.9812 114.1643)" style="display:inline;overflow:visible;"/>
 	
-		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.749 0.6523 0.6523 0.749 88.3019 106.2299)" style="overflow:visible;"/>
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.749 0.6523 0.6523 0.749 88.3019 106.2299)" style="display:inline;overflow:visible;"/>
 	
-		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.3804 0.725 0.725 0.3804 304.1758 146.521)" style="overflow:visible;"/>
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.3804 0.725 0.725 0.3804 304.1758 146.521)" style="display:inline;overflow:visible;"/>
 	
-		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.9105 -0.1804 -0.1804 0.9105 148.1284 92.632)" style="overflow:visible;"/>
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.9105 -0.1804 -0.1804 0.9105 148.1284 92.632)" style="display:inline;overflow:visible;"/>
 	
-		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.3113 -0.9287 -0.9287 0.3113 133.1996 89.7311)" style="overflow:visible;"/>
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.3113 -0.9287 -0.9287 0.3113 133.1996 89.7311)" style="display:inline;overflow:visible;"/>
 	
-		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.8704 -0.3912 -0.3912 -0.8704 146.9537 77.3799)" style="overflow:visible;"/>
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.8704 -0.3912 -0.3912 -0.8704 146.9537 77.3799)" style="display:inline;overflow:visible;"/>
 	
-		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.1193 0.9813 0.9813 0.1193 256.662 97.8981)" style="overflow:visible;"/>
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.1193 0.9813 0.9813 0.1193 256.662 97.8981)" style="display:inline;overflow:visible;"/>
 	
-		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.751 -0.6372 -0.6372 -0.751 116.7157 89.6217)" style="overflow:visible;"/>
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.751 -0.6372 -0.6372 -0.751 116.7157 89.6217)" style="display:inline;overflow:visible;"/>
 	
-		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.1109 0.9458 0.9458 0.1109 229.1164 85.7377)" style="overflow:visible;"/>
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.1109 0.9458 0.9458 0.1109 229.1164 85.7377)" style="display:inline;overflow:visible;"/>
 	
-		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.3436 -0.8702 -0.8702 -0.3436 133.1609 193.2453)" style="overflow:visible;"/>
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.3436 -0.8702 -0.8702 -0.3436 133.1609 193.2453)" style="display:inline;overflow:visible;"/>
 	
-		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.4636 -0.8602 -0.8602 0.4636 324.8475 191.0803)" style="overflow:visible;"/>
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.4636 -0.8602 -0.8602 0.4636 324.8475 191.0803)" style="display:inline;overflow:visible;"/>
 	
-		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.9272 0.2711 0.2711 -0.9272 244.0314 85.1842)" style="overflow:visible;"/>
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.9272 0.2711 0.2711 -0.9272 244.0314 85.1842)" style="display:inline;overflow:visible;"/>
 	
-		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.3838 -0.864 -0.864 0.3838 217.4693 77.7592)" style="overflow:visible;"/>
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.3838 -0.864 -0.864 0.3838 217.4693 77.7592)" style="display:inline;overflow:visible;"/>
 	
-		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(2.627176e-02 -0.7598 -0.7598 -2.627176e-02 234.3683 175.1873)" style="overflow:visible;"/>
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(2.627176e-02 -0.7598 -0.7598 -2.627176e-02 234.3683 175.1873)" style="display:inline;overflow:visible;"/>
 	
-		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.6781 -0.6121 -0.6121 0.6781 119.8181 196.0521)" style="overflow:visible;"/>
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.6781 -0.6121 -0.6121 0.6781 119.8181 196.0521)" style="display:inline;overflow:visible;"/>
 	
-		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.7767 0.5988 0.5988 -0.7767 235.12 204.4519)" style="overflow:visible;"/>
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.7767 0.5988 0.5988 -0.7767 235.12 204.4519)" style="display:inline;overflow:visible;"/>
 	
-		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.4591 -0.8505 -0.8505 -0.4591 125.6464 179.4953)" style="overflow:visible;"/>
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.4591 -0.8505 -0.8505 -0.4591 125.6464 179.4953)" style="display:inline;overflow:visible;"/>
 	
-		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.4681 -0.8597 -0.8597 0.4681 222.15 197.4322)" style="overflow:visible;"/>
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.4681 -0.8597 -0.8597 0.4681 222.15 197.4322)" style="display:inline;overflow:visible;"/>
 	
-		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-8.906236e-02 -0.9101 -0.9101 8.906236e-02 160.1927 83.0622)" style="overflow:visible;"/>
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-8.906236e-02 -0.9101 -0.9101 8.906236e-02 160.1927 83.0622)" style="display:inline;overflow:visible;"/>
 	
-		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.998 -3.321487e-02 -3.321487e-02 -0.998 172.8592 75.6732)" style="overflow:visible;"/>
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.998 -3.321487e-02 -3.321487e-02 -0.998 172.8592 75.6732)" style="display:inline;overflow:visible;"/>
 	
-		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.4248 -0.8663 -0.8663 0.4248 142.5277 179.4437)" style="overflow:visible;"/>
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.4248 -0.8663 -0.8663 0.4248 142.5277 179.4437)" style="display:inline;overflow:visible;"/>
 	
-		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.2098 0.8798 0.8798 0.2098 246.6229 180.9087)" style="overflow:visible;"/>
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.2098 0.8798 0.8798 0.2098 246.6229 180.9087)" style="display:inline;overflow:visible;"/>
 	
-		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.8157 0.4979 0.4979 0.8157 185.0835 83.9565)" style="overflow:visible;"/>
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.8157 0.4979 0.4979 0.8157 185.0835 83.9565)" style="display:inline;overflow:visible;"/>
 	
-		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.74 0.5507 0.5507 -0.74 200.162 76.168)" style="overflow:visible;"/>
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.74 0.5507 0.5507 -0.74 200.162 76.168)" style="display:inline;overflow:visible;"/>
 	
-		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.5293 0.752 0.752 -0.5293 102.1609 287.3426)" style="overflow:visible;"/>
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.5293 0.752 0.752 -0.5293 102.1609 287.3426)" style="display:inline;overflow:visible;"/>
 	
-		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.1401 0.8666 0.8666 -0.1401 114.719 280.3658)" style="overflow:visible;"/>
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.1401 0.8666 0.8666 -0.1401 114.719 280.3658)" style="display:inline;overflow:visible;"/>
 	
-		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.9222 0.3684 0.3684 0.9222 101.4602 272.1932)" style="overflow:visible;"/>
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.9222 0.3684 0.3684 0.9222 101.4602 272.1932)" style="display:inline;overflow:visible;"/>
 	
-		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.2843 -0.8324 -0.8324 -0.2843 260.3766 274.4659)" style="overflow:visible;"/>
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.2843 -0.8324 -0.8324 -0.2843 260.3766 274.4659)" style="display:inline;overflow:visible;"/>
 	
-		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.5873 -0.7294 -0.7294 -0.5873 253.4389 304.9335)" style="overflow:visible;"/>
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.5873 -0.7294 -0.7294 -0.5873 253.4389 304.9335)" style="display:inline;overflow:visible;"/>
 	
-		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.7352 0.5913 0.5913 -0.7352 252.707 365.379)" style="overflow:visible;"/>
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.7352 0.5913 0.5913 -0.7352 252.707 365.379)" style="display:inline;overflow:visible;"/>
 	
-		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.3106 -0.889 -0.889 0.3106 113.3568 295.9947)" style="overflow:visible;"/>
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.3106 -0.889 -0.889 0.3106 113.3568 295.9947)" style="display:inline;overflow:visible;"/>
 	
-		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.5053 0.773 0.773 0.5053 272.1887 274.9326)" style="overflow:visible;"/>
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.5053 0.773 0.773 0.5053 272.1887 274.9326)" style="display:inline;overflow:visible;"/>
 	
-		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.728 0.4169 0.4169 0.728 265.5409 370.4491)" style="overflow:visible;"/>
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.728 0.4169 0.4169 0.728 265.5409 370.4491)" style="display:inline;overflow:visible;"/>
 	
-		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.8233 0.1943 0.1943 -0.8233 277.2084 359.7746)" style="overflow:visible;"/>
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.8233 0.1943 0.1943 -0.8233 277.2084 359.7746)" style="display:inline;overflow:visible;"/>
 	
-		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.7501 -0.4782 -0.4782 0.7501 263.7628 358.0203)" style="overflow:visible;"/>
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.7501 -0.4782 -0.4782 0.7501 263.7628 358.0203)" style="display:inline;overflow:visible;"/>
 	
-		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.8186 -0.3617 -0.3617 0.8186 276.4912 347.2367)" style="overflow:visible;"/>
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.8186 -0.3617 -0.3617 0.8186 276.4912 347.2367)" style="display:inline;overflow:visible;"/>
 	
-		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.5909 0.7354 0.7354 0.5909 290.9605 348.8655)" style="overflow:visible;"/>
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.5909 0.7354 0.7354 0.5909 290.9605 348.8655)" style="display:inline;overflow:visible;"/>
 	
-		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.7958 -0.439 -0.439 -0.7958 288.3905 336.5844)" style="overflow:visible;"/>
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.7958 -0.439 -0.439 -0.7958 288.3905 336.5844)" style="display:inline;overflow:visible;"/>
 	
-		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.8438 0.5341 0.5341 0.8438 246.707 378.2162)" style="overflow:visible;"/>
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.8438 0.5341 0.5341 0.8438 246.707 378.2162)" style="display:inline;overflow:visible;"/>
 	
-		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.9144 -0.3186 -0.3186 -0.9144 237.3422 369.4098)" style="overflow:visible;"/>
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.9144 -0.3186 -0.3186 -0.9144 237.3422 369.4098)" style="display:inline;overflow:visible;"/>
+</g>
+<g id="thumb">
+	
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.8673 0.2988 0.2988 0.8673 120.7489 226.4043)" style="overflow:visible;"/>
+	
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.9103 0.2347 0.2347 0.9103 82.2932 244.1252)" style="overflow:visible;"/>
+	
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.653 -0.6667 -0.6667 0.653 72.9885 228.3769)" style="overflow:visible;"/>
+	
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-2.171947e-02 -0.9536 -0.9536 2.171947e-02 108.5542 221.4962)" style="overflow:visible;"/>
+	
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(9.471843e-02 0.9924 0.9924 -9.471843e-02 50.3962 242.757)" style="overflow:visible;"/>
+	
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.9765 -0.194 -0.194 0.9765 122.4235 195.1486)" style="overflow:visible;"/>
+	
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-8.876664e-02 0.8809 0.8809 8.876664e-02 86.2542 228.8451)" style="overflow:visible;"/>
+	
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.6481 -0.6978 -0.6978 -0.6481 127.4188 239.7997)" style="overflow:visible;"/>
+	
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.9024 0.146 0.146 -0.9024 66.0352 241.1343)" style="overflow:visible;"/>
+	
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.8963 -0.4069 -0.4069 -0.8963 113.0189 239.3811)" style="overflow:visible;"/>
+	
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.9435 0.1176 0.1176 -0.9435 85.4441 323.8837)" style="overflow:visible;"/>
+	
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.9068 8.418714e-02 8.418714e-02 0.9068 101.1661 327.6499)" style="overflow:visible;"/>
+	
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.2057 0.9284 0.9284 -0.2057 98.9708 231.3892)" style="overflow:visible;"/>
+	
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.1207 -0.9757 -0.9757 0.1207 97.8932 247.5601)" style="overflow:visible;"/>
+	
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.588 -0.7564 -0.7564 0.588 145.2978 311.9321)" style="overflow:visible;"/>
+	
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.8678 0.4001 0.4001 0.8678 260.1407 318.156)" style="overflow:visible;"/>
+	
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.7387 0.6225 0.6225 0.7387 126.8049 271.5601)" style="overflow:visible;"/>
+	
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.6129 -0.6714 -0.6714 0.6129 113.6979 286.4438)" style="overflow:visible;"/>
+	
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.6277 -0.7014 -0.7014 0.6277 112.2189 270.8159)" style="overflow:visible;"/>
+	
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.894 -0.2977 -0.2977 -0.894 162.2746 317.6995)" style="overflow:visible;"/>
+	
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.4626 0.7823 0.7823 -0.4626 53.5398 261.9717)" style="overflow:visible;"/>
+	
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.9042 -0.3932 -0.3932 0.9042 67.5026 254.6229)" style="overflow:visible;"/>
+	
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.6512 0.7396 0.7396 -0.6512 124.0699 255.7392)" style="overflow:visible;"/>
+	
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.8243 0.4764 0.4764 0.8243 111.8932 315.7391)" style="overflow:visible;"/>
+	
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.1433 0.9853 0.9853 -0.1433 127.2513 212.623)" style="overflow:visible;"/>
+	
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.8084 -0.5438 -0.5438 -0.8084 242.7899 318.2057)" style="overflow:visible;"/>
+	
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.8965 0.3265 0.3265 0.8965 122.7978 324.8779)" style="overflow:visible;"/>
+	
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.2285 -0.9255 -0.9255 -0.2285 126.4421 288.9484)" style="overflow:visible;"/>
+	
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.9337 0.1668 0.1668 0.9337 52.6841 276.4833)" style="overflow:visible;"/>
+	
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.7394 -0.6157 -0.6157 0.7394 87.298 258.0648)" style="overflow:visible;"/>
+	
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.4738 0.7757 0.7757 0.4738 98.749 286.4298)" style="overflow:visible;"/>
+	
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.1872 -0.9051 -0.9051 0.1872 49.9911 211.9014)" style="overflow:visible;"/>
+	
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.8112 -0.5776 -0.5776 -0.8112 101.9304 300.7554)" style="overflow:visible;"/>
+	
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.2366 0.8897 0.8897 -0.2366 110.7665 254.9877)" style="overflow:visible;"/>
+	
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.5927 0.7961 0.7961 -0.5927 278.2278 289.0345)" style="overflow:visible;"/>
+	
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.1547 0.9258 0.9258 0.1547 97.8654 270.3369)" style="overflow:visible;"/>
+	
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.8594 -4.383912e-02 -4.383912e-02 -0.8594 116.0732 302.4338)" style="overflow:visible;"/>
+	
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.9189 -2.863945e-02 -2.863945e-02 0.9189 306.0715 193.3999)" style="overflow:visible;"/>
+	
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.9726 2.807833e-02 2.807833e-02 -0.9726 237.2437 169.7721)" style="overflow:visible;"/>
+	
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.9137 -1.751908e-03 -1.751908e-03 0.9137 225.3291 317.2007)" style="overflow:visible;"/>
+	
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(7.729391e-03 0.9661 0.9661 -7.729391e-03 68.6314 271.9779)" style="overflow:visible;"/>
+	
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.9036 7.732586e-02 7.732586e-02 0.9036 95.4095 313.6786)" style="overflow:visible;"/>
+	
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.2404 -0.9207 -0.9207 -0.2404 83.9156 274.1053)" style="overflow:visible;"/>
+	
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.448 -0.8043 -0.8043 -0.448 78.87 310.7019)" style="overflow:visible;"/>
+	
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.1864 -0.9472 -0.9472 -0.1864 129.9245 309.7373)" style="overflow:visible;"/>
+	
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.3631 -0.8799 -0.8799 -0.3631 276.5312 305.9072)" style="overflow:visible;"/>
+	
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.718 -0.595 -0.595 0.718 193.8745 318.7019)" style="overflow:visible;"/>
+	
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(4.209670e-02 -0.957 -0.957 -4.209670e-02 172.7655 93.8028)" style="overflow:visible;"/>
+	
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.497 0.8111 0.8111 0.497 284.161 170.8315)" style="overflow:visible;"/>
+	
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.3041 0.8974 0.8974 0.3041 208.6001 318.1437)" style="overflow:visible;"/>
+	
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.6114 -0.7341 -0.7341 0.6114 87.7654 195.4445)" style="overflow:visible;"/>
+	
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.9364 -0.3109 -0.3109 0.9364 57.4596 227.8652)" style="overflow:visible;"/>
+	
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-3.889652e-02 0.9902 0.9902 3.889652e-02 70.4886 328.4623)" style="overflow:visible;"/>
+	
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.7885 0.5796 0.5796 0.7885 76.6375 290.3229)" style="overflow:visible;"/>
+	
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.6519 -0.7453 -0.7453 0.6519 65.298 305.5787)" style="overflow:visible;"/>
+	
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.5074 0.7777 0.7777 0.5074 164.7484 157.0183)" style="overflow:visible;"/>
+	
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.2736 -0.9388 -0.9388 0.2736 178.0092 319.1674)" style="overflow:visible;"/>
+	
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.8996 0.3064 0.3064 0.8996 201.5725 86.7754)" style="overflow:visible;"/>
+	
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-7.806411e-02 -0.9915 -0.9915 7.806411e-02 289.7087 279.7114)" style="overflow:visible;"/>
+	
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.7084 0.5974 0.5974 -0.7084 268.6949 170.6884)" style="overflow:visible;"/>
+	
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.2108 -0.9471 -0.9471 -0.2108 72.4467 196.0668)" style="overflow:visible;"/>
+	
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.8273 -0.5262 -0.5262 -0.8273 64.6785 213.3082)" style="overflow:visible;"/>
+	
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.5915 -0.7228 -0.7228 0.5915 103.7406 193.4942)" style="overflow:visible;"/>
+	
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-2.488877e-02 0.9679 0.9679 2.488877e-02 87.1124 298.8239)" style="overflow:visible;"/>
+	
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.3573 -0.926 -0.926 -0.3573 61.9491 288.3625)" style="overflow:visible;"/>
+	
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.3321 -0.8938 -0.8938 -0.3321 155.5415 170.2163)" style="overflow:visible;"/>
+	
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.8915 0.3665 0.3665 0.8915 171.2488 141.5728)" style="overflow:visible;"/>
+	
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.6757 -0.6968 -0.6968 0.6757 141.1418 199.7972)" style="overflow:visible;"/>
+	
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.2969 -0.9537 -0.9537 0.2969 299.5692 180.0768)" style="overflow:visible;"/>
+	
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.7531 0.5585 0.5585 0.7531 297.532 206.4953)" style="overflow:visible;"/>
+	
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.8469 -0.483 -0.483 0.8469 57.5274 196.5576)" style="overflow:visible;"/>
+	
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.3706 0.8515 0.8515 0.3706 58.0142 320.8205)" style="overflow:visible;"/>
+	
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.9794 -0.1972 -0.1972 0.9794 219.6069 171.0032)" style="overflow:visible;"/>
+	
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.5965 0.7567 0.7567 -0.5965 146.9553 186.0371)" style="overflow:visible;"/>
+	
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.1688 0.9855 0.9855 -0.1688 49.1376 301.4986)" style="overflow:visible;"/>
+	
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.1062 -0.9198 -0.9198 0.1062 177.588 110.8606)" style="overflow:visible;"/>
+	
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.5216 0.7914 0.7914 -0.5216 176.9818 128.9321)" style="overflow:visible;"/>
+	
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-5.037107e-02 0.9658 0.9658 5.037107e-02 254.3506 173.2791)" style="overflow:visible;"/>
+	
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.3005 0.9372 0.9372 -0.3005 304.7785 223.8837)" style="overflow:visible;"/>
+	
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.5566 0.7167 0.7167 0.5566 304.2686 241.4339)" style="overflow:visible;"/>
+	
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.9941 5.600476e-02 5.600476e-02 -0.9941 184.146 83.0398)" style="overflow:visible;"/>
+	
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.796 0.593 0.593 0.796 210.8529 159.5047)" style="overflow:visible;"/>
+	
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.4036 -0.8244 -0.8244 -0.4036 79.076 212.4807)" style="overflow:visible;"/>
+	
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.9004 -5.835141e-02 -5.835141e-02 -0.9004 218.9639 143.8344)" style="overflow:visible;"/>
+	
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.7697 0.6169 0.6169 -0.7697 219.4546 128.9819)" style="overflow:visible;"/>
+	
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.913 -1.418247e-02 -1.418247e-02 0.913 220.8717 113.4583)" style="overflow:visible;"/>
+	
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.9322 -0.351 -0.351 0.9322 291.9506 251.5046)" style="overflow:visible;"/>
+	
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.9412 -0.1289 -0.1289 0.9412 112.2774 206.1776)" style="overflow:visible;"/>
+	
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.3762 0.8326 0.8326 -0.3762 210.8529 100.7072)" style="overflow:visible;"/>
+	
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(-0.7967 -0.6011 -0.6011 0.7967 94.3127 212.1476)" style="overflow:visible;"/>
+	
+		<use xlink:href="#New_Symbol"  width="21.5" height="16.2" x="-10.8" y="-8.1" transform="matrix(0.9543 0.2489 0.2489 -0.9543 296.0436 266.4743)" style="overflow:visible;"/>
 </g>
 </svg>

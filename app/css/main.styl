@@ -5,6 +5,7 @@ body
 	font-size 13px
 	line-height 24px
 	overflow hidden
+	font-size 10px
 	a.opt
 		display inline-block
 		margin 10px
@@ -31,6 +32,7 @@ body
 	transform translateX( -50% ) translateY( -50% )
 	background #cdcdcd
 	opacity 0
+	pointer-events none
 
 #shaper
 	poxsition fixed
@@ -46,7 +48,20 @@ body
 	left 0
 	width calc( 100vw - 40px )
 	height calc( 100vh - 40px )
+	pointer-events none
+	#performance
+		position absolute
+		bottom 20px
+		left 20px
+		width 80px
+		height 48px
+		&>div
+			position absolute !important
+			left auto !important
+			right 0px !important
+
 	button 
+		pointer-events auto
 		width 70px
 		height 21px
 		line-height 0px

@@ -6,25 +6,29 @@ import ShapeCompute from './ShapeCompute'
 import EventEmitter from 'event-emitter-es6'
 
 class BirdMesh extends Mesh {
-    constructor( renderer, tSize ){
+    constructor( renderer, camera, tSize ){
         super()
         this.renderer = renderer
+        this.camera = camera
         this.tSize = tSize
         this.emitter = new EventEmitter()
         this.precomputed = new GeoBake( this.renderer )
+
+        this.wingSpeed = 2
+        this.state = 0 // 0 -> standby, 1 -> formation, 2 -> home
         
-        this.computationRender = new ComputationRender( this.renderer, this.tSize )
+        this.computationRender = new ComputationRender( this.renderer, this.camera, this.tSize )
 
         this.shapeCompute = new ShapeCompute( ) 
         this.shapeCompute.emitter.on( 'positionUpdate', ( c, d ) => this.shapeUpdate( c, d ) )
 
         this.precomputed.emitter.on( 'computeReady', ( models, texture ) => this.init( models, texture ) )
+
+        setInterval( () => ( this.state == 0 ) && this.computationRender.fillFormationTexture( ), 2500 )
     }
 
     init( models, texture ){
-        // console.log( models )
         var colors = [ [0.16, 0.63, 0.6 ], [0.33, 0.68, 0.86 ], [0.54, 0.23, 0.55 ], [0.0, 0.36, 0.64 ], [ 0.84, 0.05, 0.5 ] ]
-        // [tortola]
         var sizes = { tortola : 0.743015, puput : 1.0483234923, golondrina : 1.6334667048, estornino : 1.3110737618, codorniz : 0.9906866667  }
         var geometry = new BufferGeometry();
         var pos = [], vid = [], ref = [], ind = [], col = []
@@ -70,29 +74,31 @@ class BirdMesh extends Mesh {
                 frame: { value : 0 }
 			},
 			vertexShader: shaders.vert,
-            fragmentShader: shaders.frag
+            fragmentShader: shaders.frag,
+            transparent : true
         } );
 
         this.emitter.emit( 'geoReady' )
     }
 
     shapeUpdate( c ){
+        this.state = 1
         this.computationRender.makeFormation( c )
     }
 
     makeFormation( data ){
         if( data.type == 'text' ) this.shapeCompute.makeText( data.content )
         else if( data.type == 'icon' ) this.shapeCompute.makeImage( data.content )
+        else if ( data.type == 'reset' ) this.computationRender.undoFormation( )
     }
 
     step( time ) {
 		this.computationRender.step( time )
-        this.material.uniforms.frame.value = ( this.material.uniforms.frame.value < 58 ) ? ( this.material.uniforms.frame.value + 1 ) : 0;
+        this.material.uniforms.frame.value += this.wingSpeed
 
         this.material.uniforms[ "texturePosition" ].value = this.computationRender.gpuCompute.getCurrentRenderTarget( this.computationRender.positionVariable ).texture
         this.material.uniforms[ "textureVelocity" ].value = this.computationRender.gpuCompute.getCurrentRenderTarget( this.computationRender.velocityVariable ).texture
         this.material.uniforms[ "textureFormation" ].value = this.computationRender.dtFormation
-
     }
 }
 
