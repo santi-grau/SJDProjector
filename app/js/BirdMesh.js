@@ -29,7 +29,7 @@ class BirdMesh extends Mesh {
 
     init( models, texture ){
         var colors = [ [0.16, 0.63, 0.6 ], [0.33, 0.68, 0.86 ], [0.54, 0.23, 0.55 ], [0.0, 0.36, 0.64 ], [ 0.84, 0.05, 0.5 ] ]
-        var sizes = { tortola : 0.743015, puput : 1.0483234923, golondrina : 1.6334667048, estornino : 1.3110737618, codorniz : 0.9906866667  }
+        var sizes = { tortola : 0.743015, puput : 1.0483234923, golondrina : 1.5, estornino : 1.3110737618, codorniz : 1.2  }
         var geometry = new BufferGeometry();
         var pos = [], vid = [], ref = [], ind = [], col = []
         var vcount = 0
@@ -69,6 +69,7 @@ class BirdMesh extends Mesh {
                 texturePosition : { value: null },
                 textureVelocity : { value: null },
                 textureFormation : { value : null },
+                formationTimeline : { value : null },
 		        time : { value: 1.0 },
 		        delta : { value: 0.0 },
                 frame: { value : 0 }
@@ -99,6 +100,7 @@ class BirdMesh extends Mesh {
         this.material.uniforms[ "texturePosition" ].value = this.computationRender.gpuCompute.getCurrentRenderTarget( this.computationRender.positionVariable ).texture
         this.material.uniforms[ "textureVelocity" ].value = this.computationRender.gpuCompute.getCurrentRenderTarget( this.computationRender.velocityVariable ).texture
         this.material.uniforms[ "textureFormation" ].value = this.computationRender.dtFormation
+        this.material.uniforms[ "formationTimeline" ].value = this.computationRender.formationTimeline
     }
 }
 

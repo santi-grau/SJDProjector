@@ -7,14 +7,9 @@ uniform sampler2D textureVelocity;
 uniform float frame;
 attribute vec4 vertexID;
 varying vec4 col;
+uniform float formationTimeline;
 
 const float PI = 3.1415926535897932384626433832795;
-
-// tortola 0.142599m
-// puput 0.283506m
-// golondrina 0.181948m
-// estornino 0.226689m
-// codorniz 0.189676m
 
 mat4 rotationMatrix(vec3 axis, float angle) {
 	axis = normalize(axis);
@@ -33,16 +28,22 @@ void main() {
 	col = vec4( vColor, vertexID.z );
 	vec3 velocity = normalize(texture2D( textureVelocity, reference ).xyz);
 	vec4 formation = texture2D( textureFormation, reference );
+	vec4 position = texture2D( texturePosition, reference );
 	float f = frame + floor( vertexID.z * 60.0 );
 	float ff = mod( f + vertexID.z * 60.0, 60.0 );
 	vec3 fPos = texture2D( txtAnimation, vec2( vertexID.x / 2048.0, ( ff + 60.0 * vertexID.y ) / 2048.0 ) ).xyz;
 	fPos *= vertexID.w;
-	fPos *= 14.0;
+	fPos *= 15.0;
 
-	fPos = rotate( fPos, vec3( 0.0, 1.0, 0.0 ), -PI / 2.0 ); // rotation of model to fly straight
 
-	// fPos = rotate( fPos, vec3( 1.0, 0.0, 0.0 ), PI / 2.0 );
-	// fPos = rotate( fPos, vec3( 0.0, 0.0, 1.0 ), formation.z );
+	vec3 pFlight = rotate( fPos, vec3( 0.0, 1.0, 0.0 ), -PI / 2.0 ); // rotation of model to fly straight
+	vec3 pFormation = rotate(  rotate( fPos, vec3( 1.0, 0.0, 0.0 ), PI / 2.0 ), vec3( 0.0, 0.0, 1.0 ), formation.z );
+
+	if( position.w == 1.0 ){
+		fPos = mix( pFlight, pFormation, formationTimeline );
+	} else {
+		fPos = pFormation;
+	}
 
 	vec3 pos = texture2D( texturePosition, reference ).xyz;
 
@@ -51,6 +52,7 @@ void main() {
 	float xz = length( velocity.xz );
 	float xyz = 1.0;
 	float x = sqrt( 1. - velocity.y * velocity.y );
+
 	float cosry = velocity.x / xz;
 	float sinry = velocity.z / xz;
 	float cosrz = x / xyz;
@@ -59,7 +61,10 @@ void main() {
 	mat3 maty =  mat3( cosry, 0, -sinry, 0, 1, 0, sinry, 0, cosry );
 	mat3 matz =  mat3( cosrz , sinrz, 0, -sinrz, cosrz, 0, 0, 0, 1 );
 
-	fPos =  maty * matz * fPos;
+	if( position.w == 1.0 ){
+		fPos = maty * matz * fPos;
+	}
+
 	fPos += pos;
 
 	gl_Position = projectionMatrix *  viewMatrix  * vec4( fPos, 1.0 );

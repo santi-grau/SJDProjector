@@ -1,29 +1,29 @@
-import { Vector3, Vector4, RepeatWrapping } from 'three'
+import { Vector2, Vector3, Vector4, RepeatWrapping } from 'three'
 import { GPUComputationRenderer } from './GPUComputationRender'
 import shaders from './shaders/*.*'
+
 
 class ComputationRender{
     constructor( renderer, camera, tSize ){
         this.tSize = tSize
         this.camera = camera
         this.renderer = renderer
-        var WIDTH = tSize
+
         this.last = performance.now()
         this.totalBirds = this.tSize * this.tSize
-        var BOUNDS = 1600
 
         this.active = []
         for( var i = 0 ; i < this.totalBirds ; i++ ) this.active.push( i )
         for(var j, x, i = this.active.length; i; j = parseInt(Math.random() * i), x = this.active[--i], this.active[i] = this.active[j], this.active[j] = x);
-        this.active = this.active.splice( 0, this.totalBirds * 0.2 ).sort( (a, b) => a - b )
+        this.active = this.active.splice( 0, this.totalBirds * 0.1 ).sort( (a, b) => a - b )
         
-        this.gpuCompute = new GPUComputationRenderer( WIDTH, WIDTH, this.renderer )
+        this.gpuCompute = new GPUComputationRenderer( tSize, tSize, this.renderer )
         this.dtPosition = this.gpuCompute.createTexture()
         this.dtFormation = this.gpuCompute.createTexture()
         this.dtVelocity = this.gpuCompute.createTexture()
-        this.fillPositionTexture( )
-        this.fillFormationTexture( )
-        this.fillVelocityTexture( )
+        this.fillPositionTexture()
+        this.fillFormationTexture()
+        this.fillVelocityTexture()
         this.velocityVariable = this.gpuCompute.addVariable( "textureVelocity", shaders.velocity.frag, this.dtVelocity )
         this.positionVariable = this.gpuCompute.addVariable( "texturePosition", shaders.position.frag, this.dtPosition )
         
@@ -39,12 +39,25 @@ class ComputationRender{
         this.velocityUniforms[ "flyToTarget" ] = { value: false }
         this.velocityUniforms[ "formationTexture" ] = { value: this.dtFormation }
         this.positionUniforms[ "formationTexture" ] = { value: this.dtFormation }
+        this.positionUniforms[ "formationTimeline" ] = { value: 0 }
+        this.velocityUniforms[ "formationTimeline" ] = { value: 0 }
+
+
+        this.positionUniforms[ "screenSize" ] = { value : 
+            new Vector2( 
+                this.sizeAtDepth( 0, this.camera ).x, 
+                this.sizeAtDepth( 0, this.camera ).y
+            ) 
+        }
         
         this.velocityVariable.wrapS = RepeatWrapping
         this.velocityVariable.wrapT = RepeatWrapping
         this.positionVariable.wrapS = RepeatWrapping
         this.positionVariable.wrapT = RepeatWrapping
         this.gpuCompute.init()
+
+        this.formation = false
+        this.formationTimeline = 0
     }
 
     sizeAtDepth( depth, camera ) {
@@ -57,13 +70,14 @@ class ComputationRender{
     makeFormation( c ){
         this.undoFormation( )
 
+        this.formation = true
         var ps = []
         for ( var k = 0, kl = this.totalBirds * 4, i; k < kl; k += 4, i = k / 4 ) {
             if( c[ i ] ) {
                 ps.push( c[ i ].x, -c[ i ].y, c[ i ].rotation, 1 )
             } else {
                 var frustrumSize = this.sizeAtDepth( 0, this.camera )
-                ps.push( ( Math.round( Math.random() ) * 2 - 1 ) * ( frustrumSize.x * 0.6 ) , ( Math.round( Math.random() ) * 2 - 1 ) * ( frustrumSize.y * 0.6 ), 0, 1 )
+                ps.push( -2000.0, -2000.0 , 0, 1 )
             }
         }
         this.dtFormation.image.data = new Float32Array( ps )
@@ -97,8 +111,8 @@ class ComputationRender{
     fillVelocityTexture( ) {
         var ps = []
         for ( var k = 0, kl = this.totalBirds * 4, i; k < kl; k += 4, i = k / 4 ) {
-            if( this.active.indexOf( i ) > -1 ) ps.push( Math.random() * 10, Math.random() * 10, Math.random() * 10, 1.0 )
-            else ps.push( 0.000001, 0.000001, 0.000001, 0.0001 )
+            if( this.active.indexOf( i ) > -1 ) ps.push( Math.random() * 10, Math.random() * 10, Math.random() * 10, Math.random() )
+            else ps.push(0.0, 0.0, 0.0, Math.random() )
         }
         this.dtVelocity.image.data = new Float32Array( ps )
     }
@@ -116,12 +130,14 @@ class ComputationRender{
     }
 
     step( time ){
+        if( this.formation && this.formationTimeline < 1 ) this.formationTimeline += Math.min( 0.005, 1 - this.formationTimeline )
+        this.positionUniforms[ "formationTimeline" ] = { value: this.formationTimeline }
+        this.velocityUniforms[ "formationTimeline" ] = { value: this.formationTimeline }
         var now = performance.now()
         var delta = Math.min( 1, ( now - this.last ) / 1000 )
         this.last = now
         this.positionUniforms[ "delta" ].value = delta
         this.velocityUniforms[ "delta" ].value = delta
-        this.velocityUniforms[ "time" ].value = time
         this.gpuCompute.compute()
     }
 }
