@@ -50,24 +50,24 @@ void main()	{
     vec4 formation = texture2D( formationTexture, uv );
     vec4 velocity = texture2D( textureVelocity, uv );
 
-    vec4 p = vec4( position.xyz + velocity.xyz * delta * 15. , position.w );
+    vec4 p = vec4( position.xyz + velocity.xyz * delta * 15. , velocity.w );
     
     
-    if( formation.w == 0.0 && position.w == 0.0 ) {
-        p = vec4( -2000.0, -2000, 0.0, 0.0 );
-    }
+    // if( formation.w == 0.0 && position.w == 0.0 ) {
+    //     p = vec4( -2000.0, -2000, 0.0, 0.0 );
+    // }
 
 
-    if( formation.w == 1.0 && position.w == 0.0 ) {
-        vec2 intersect = lineEdgeIntersection( formation.xy, formation.z );
-        vec2 path = ( intersect - formation.xy ) * ( 1.0 + ( 1.0 - velocity.w ) );
+    // if( formation.w == 1.0 && position.w == 0.0 ) {
+    //     vec2 intersect = lineEdgeIntersection( formation.xy, formation.z );
+    //     vec2 path = ( intersect - formation.xy ) * ( 1.0 + ( 1.0 - velocity.w ) );
 
-        float t = 0.9 + (velocity.w * 0.1);
-        float remap = clamp( ( formationTimeline - ( 1.0 - t ) / 2.0 ) /  t , 0.0, 1.0);
+    //     float t = 0.9 + (velocity.w * 0.1);
+    //     float remap = clamp( ( formationTimeline - ( 1.0 - t ) / 2.0 ) /  t , 0.0, 1.0);
         
-        float eased = easeOutQuad( remap, 0.0, 1.0, 1.0  );
-        p = vec4( formation.xy + vec2( path * ( 1.0 - eased ) ), 0.0, 0.0 );
-    }
+    //     float eased = easeOutQuad( remap, 0.0, 1.0, 1.0  );
+    //     p = vec4( formation.xy + vec2( path * ( 1.0 - eased ) ), 0.0, 0.0 );
+    // }
 
     gl_FragColor = p;
 

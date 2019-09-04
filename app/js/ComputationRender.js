@@ -11,7 +11,7 @@ class ComputationRender{
 
         this.last = performance.now()
         this.totalBirds = this.tSize * this.tSize
-
+        this.inFormation = false
         this.active = []
         for( var i = 0 ; i < this.totalBirds ; i++ ) this.active.push( i )
         for(var j, x, i = this.active.length; i; j = parseInt(Math.random() * i), x = this.active[--i], this.active[i] = this.active[j], this.active[j] = x);
@@ -38,6 +38,7 @@ class ComputationRender{
         this.velocityUniforms[ "predator" ] = { value: new Vector3() }
         this.velocityUniforms[ "flyToTarget" ] = { value: false }
         this.velocityUniforms[ "formationTexture" ] = { value: this.dtFormation }
+        this.velocityUniforms[ "impulse" ] = { value: false }
         this.positionUniforms[ "formationTexture" ] = { value: this.dtFormation }
         this.positionUniforms[ "formationTimeline" ] = { value: 0 }
         this.velocityUniforms[ "formationTimeline" ] = { value: 0 }
@@ -68,7 +69,15 @@ class ComputationRender{
       
 
     makeFormation( c ){
-        this.undoFormation( )
+        if( this.inFormation ){
+            this.undoFormation()
+            if( this.formationTimeout ) clearTimeout( this.formationTimeout )
+            this.formationTimeout = setTimeout( function(){ this.makeFormation( c ) }.bind( this ), 3000 )
+            return
+        }
+        this.inFormation = true
+
+        this.velocityUniforms.impulse.value = true
 
         this.formation = true
         var ps = []
@@ -77,7 +86,9 @@ class ComputationRender{
                 ps.push( c[ i ].x, -c[ i ].y, c[ i ].rotation, 1 )
             } else {
                 var frustrumSize = this.sizeAtDepth( 0, this.camera )
-                ps.push( -2000.0, -2000.0 , 0, 1 )
+                var a = Math.PI * 2 * ( ( i ) / ( this.totalBirds ) ) * 10
+                var p = new Vector4( Math.cos( a ) * frustrumSize.x, Math.sin( a ) * frustrumSize.x, 0, 0 )
+                ps.push( p.x, p.y, p.z, 1 )
             }
         }
         this.dtFormation.image.data = new Float32Array( ps )
@@ -85,49 +96,51 @@ class ComputationRender{
     }
 
     undoFormation( ){
-        var theArray = this.dtFormation.image.data
-        
-        for ( var k = 0, kl = theArray.length; k < kl; k += 4 ) {
-            theArray[ k + 0 ] = ( Math.random() - 0.5 ) * 600
-            theArray[ k + 1 ] = ( Math.random() - 0.5 ) * 400
-            theArray[ k + 2 ] = 1
-            theArray[ k + 3 ] = 0
-        }
-
-        this.dtFormation.needsUpdate = true
+        this.velocityUniforms.impulse.value = false
+        this.inFormation = false
+        this.fillFormationTexture()
     }
 
     fillPositionTexture( ) {
         var ps = []
-        for ( var k = 0, kl = this.totalBirds * 4, i; k < kl; k += 4, i = k / 4 ) {
-            var d = Math.random() * 200, frustrumSize = this.sizeAtDepth( d, this.camera )
-            var p = new Vector4( ( Math.round( Math.random() ) * 2 - 1 ) * ( frustrumSize.x * 0.6 ) , ( Math.round( Math.random() ) * 2 - 1 ) * ( frustrumSize.y * 0.6 ), d, 0 )
-            if( this.active.indexOf( i ) > -1 ) p = new Vector4( ( Math.random() - 0.5 ) * frustrumSize.x , ( Math.random() - 0.5 ) * frustrumSize.y, d, 1 )
+        for ( var k = 0, kl = this.totalBirds * 4, i = 0; k < kl; k += 4, i = k / 4 ) {
+            var d = Math.random() * 250, frustrumSize = this.sizeAtDepth( d, this.camera )
+            var a = Math.PI * 2 * ( ( i ) / ( this.totalBirds ) ) * 10
+            var p = new Vector4( Math.cos( a ) * frustrumSize.x, Math.sin( a ) * frustrumSize.x, d, 0 )
+            if( this.active.indexOf( i ) > -1 ) p = new Vector4( ( Math.random() - 0.5 ) * frustrumSize.x , ( Math.random() - 0.5 ) * frustrumSize.y, d, 0 )
             ps.push( p.x, p.y, p.z, p.w )
         }
         this.dtPosition.image.data = new Float32Array( ps )
     }
 
-    fillVelocityTexture( ) {
-        var ps = []
-        for ( var k = 0, kl = this.totalBirds * 4, i; k < kl; k += 4, i = k / 4 ) {
-            if( this.active.indexOf( i ) > -1 ) ps.push( Math.random() * 10, Math.random() * 10, Math.random() * 10, Math.random() )
-            else ps.push(0.0, 0.0, 0.0, Math.random() )
-        }
-        this.dtVelocity.image.data = new Float32Array( ps )
-    }
-
     fillFormationTexture( ) {
         var ps = []
-        for ( var k = 0, kl = this.totalBirds * 4, i; k < kl; k += 4, i = k / 4 ) {
-            var d = Math.random() * 200, frustrumSize = this.sizeAtDepth( d, this.camera )
-            var p = new Vector4( ( Math.round( Math.random() ) * 2 - 1 ) * ( frustrumSize.x * 0.6 ) , ( Math.round( Math.random() ) * 2 - 1 ) * ( frustrumSize.y * 0.6 ), d, 0 )
+        for ( var k = 0, kl = this.totalBirds * 4, i = 0; k < kl; k += 4, i = k / 4 ) {
+            var d = Math.random() * 250, frustrumSize = this.sizeAtDepth( d, this.camera )
+            var a = Math.PI * 2 * ( ( i ) / ( this.totalBirds ) ) * 10
+            var p = new Vector4( Math.cos( a ) * frustrumSize.x, Math.sin( a ) * frustrumSize.x, d, 0 )
             if( this.active.indexOf( i ) > -1 ) p = new Vector4( ( Math.random() - 0.5 ) * frustrumSize.x , ( Math.random() - 0.5 ) * frustrumSize.y, d, 0 )
             ps.push( p.x, p.y, p.z, p.w )
         }
         this.dtFormation.image.data = new Float32Array( ps )
         this.dtFormation.needsUpdate = true
     }
+
+    randomizeFormationTexture( ){
+        if( this.inFormation ) return
+        this.fillFormationTexture()
+    }
+
+    fillVelocityTexture( ) {
+        var ps = []
+        for ( var k = 0, kl = this.totalBirds * 4, i = 0; k < kl; k += 4, i = k / 4 ) {
+            if( this.active.indexOf( i ) > -1 ) ps.push( ( Math.random() - 0.5 ) * 10, ( Math.random() - 0.5 ) * 10, ( Math.random() - 0.5 ) * 10, 0 )
+            else ps.push(0.0, 0.0, 0.0, 0 )
+        }
+        this.dtVelocity.image.data = new Float32Array( ps )
+    }
+
+    
 
     step( time ){
         if( this.formation && this.formationTimeline < 1 ) this.formationTimeline += Math.min( 0.005, 1 - this.formationTimeline )

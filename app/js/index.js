@@ -45,8 +45,9 @@ class Index{
     }
 
     step( time ){
-        requestAnimationFrame( this.step.bind( this ) )
         this.stats.begin()
+        requestAnimationFrame( this.step.bind( this ) )
+        
         this.birdMesh.step( time )
         this.renderer.render( this.scene, this.camera );
         this.stats.end()

@@ -15,7 +15,6 @@ class BirdMesh extends Mesh {
         this.precomputed = new GeoBake( this.renderer )
 
         this.wingSpeed = 2
-        this.state = 0 // 0 -> standby, 1 -> formation, 2 -> home
         
         this.computationRender = new ComputationRender( this.renderer, this.camera, this.tSize )
 
@@ -24,7 +23,7 @@ class BirdMesh extends Mesh {
 
         this.precomputed.emitter.on( 'computeReady', ( models, texture ) => this.init( models, texture ) )
 
-        setInterval( () => ( this.state == 0 ) && this.computationRender.fillFormationTexture( ), 2500 )
+        setInterval( () => this.computationRender.randomizeFormationTexture( ), 2500 )
     }
 
     init( models, texture ){
@@ -83,7 +82,6 @@ class BirdMesh extends Mesh {
     }
 
     shapeUpdate( c ){
-        this.state = 1
         this.computationRender.makeFormation( c )
     }
 

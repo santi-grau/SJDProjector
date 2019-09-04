@@ -33,17 +33,20 @@ void main() {
 	float ff = mod( f + vertexID.z * 60.0, 60.0 );
 	vec3 fPos = texture2D( txtAnimation, vec2( vertexID.x / 2048.0, ( ff + 60.0 * vertexID.y ) / 2048.0 ) ).xyz;
 	fPos *= vertexID.w;
+	// if( position.w > 0.0 ) fPos *= 1.0 + 3.0 * position.w;
 	fPos *= 15.0;
 
-
+	fPos = rotate( fPos, vec3( 0.0, 0.0, 1.0), PI * 0.5 * position.w );
 	vec3 pFlight = rotate( fPos, vec3( 0.0, 1.0, 0.0 ), -PI / 2.0 ); // rotation of model to fly straight
-	vec3 pFormation = rotate(  rotate( fPos, vec3( 1.0, 0.0, 0.0 ), PI / 2.0 ), vec3( 0.0, 0.0, 1.0 ), formation.z );
+	// vec3 pFormation = rotate(  rotate( fPos, vec3( 1.0, 0.0, 0.0 ), PI / 2.0 ), vec3( 0.0, 0.0, 1.0 ), formation.z );
 
-	if( position.w == 1.0 ){
-		fPos = mix( pFlight, pFormation, formationTimeline );
-	} else {
-		fPos = pFormation;
-	}
+	
+	fPos = pFlight;
+	
+	// if( formation.w == 1.0 ){
+	// 	fPos = mix( pFlight, pFormation, position.w );
+
+	// }
 
 	vec3 pos = texture2D( texturePosition, reference ).xyz;
 
@@ -58,12 +61,20 @@ void main() {
 	float cosrz = x / xyz;
 	float sinrz = velocity.y / xyz;
 
+	// if( formation.w == 1.0 ){
+	// 	cosry = mix( velocity.x / xz, 1.0, position.w );
+	// 	sinry *= ( 1.0 - position.w );
+	// 	cosrz = mix( x / xyz, 1.0, position.w );
+	// 	sinrz *= ( 1.0 - position.w );
+	// }
+		
 	mat3 maty =  mat3( cosry, 0, -sinry, 0, 1, 0, sinry, 0, cosry );
 	mat3 matz =  mat3( cosrz , sinrz, 0, -sinrz, cosrz, 0, 0, 0, 1 );
 
-	if( position.w == 1.0 ){
-		fPos = maty * matz * fPos;
-	}
+	// maty =  mat3( 1, 0, 0, 0, 1, 0, 0, 0, 1 );
+	// matz =  mat3( 1, 0, 0, 0, 1, 0, 0, 0, 1 );
+
+	fPos = maty * matz * fPos;
 
 	fPos += pos;
 
