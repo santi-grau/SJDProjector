@@ -14,7 +14,7 @@ class Index{
         this.renderer.setSize( this.node.offsetWidth, this.node.offsetHeight )
         this.node.appendChild( this.renderer.domElement )
 
-        this.camera = new PerspectiveCamera( 50, this.node.offsetWidth / this.node.offsetHeight, 0.1, 1000 );
+        this.camera = new PerspectiveCamera( 40, this.node.offsetWidth / this.node.offsetHeight, 0.1, 1000 );
         this.camera.position.set( 0, 0, 350 );
         const controls = new OrbitControls( this.camera, this.renderer.domElement);
         controls.enabled = true;
@@ -36,12 +36,20 @@ class Index{
         })
 
         this.stats = new Stats();
-        document.getElementById( 'performance' ).appendChild( this.stats.dom )
+        // document.getElementById( 'performance' ).appendChild( this.stats.dom )
     }
 
     init(  ){
         this.scene.add( this.birdMesh )
         this.step()
+        
+        // setTimeout( () => this.birdMesh.computationRender.leaveScreen( ), 30000 )
+        setTimeout( () => this.birdMesh.makeFormation( { type : 'text', content : 'ines' } ), 4000 )
+        setTimeout( () => this.birdMesh.computationRender.undoFormation(), 9000 )
+        setTimeout( () => this.birdMesh.makeFormation( { type : 'text', content : 'culo' } ), 12000 )
+        setTimeout( () => this.birdMesh.computationRender.undoFormation(), 17000 )
+        setTimeout( () => this.birdMesh.computationRender.leaveScreen( ), 21000 )
+        
     }
 
     step( time ){

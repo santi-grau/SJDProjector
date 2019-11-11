@@ -4,6 +4,8 @@ import GeoBake from './GeoBake'
 import ComputationRender from './ComputationRender'
 import ShapeCompute from './ShapeCompute'
 import EventEmitter from 'event-emitter-es6'
+// import fs from 'fs'
+// import TGA from 'tga'
 
 class BirdMesh extends Mesh {
     constructor( renderer, camera, tSize ){
@@ -27,6 +29,17 @@ class BirdMesh extends Mesh {
     }
 
     init( models, texture ){
+        console.log( models, texture )
+        // console.log( texture.image.width, texture.image.height, texture.image.data )
+        // var data = []
+        // texture.image.data.forEach( (d, i ) => { data.push(  parseFloat( d.toFixed( 5 ) ) ) })
+        // var blob = new Blob([JSON.stringify(data)], {type: "text/plain"});
+        // var url = window.URL.createObjectURL(blob);
+        // var a = document.createElement("a");
+        // a.href = url;
+        // a.download = 'data.json';
+        // a.click();
+
         var colors = [ [0.16, 0.63, 0.6 ], [0.33, 0.68, 0.86 ], [0.54, 0.23, 0.55 ], [0.0, 0.36, 0.64 ], [ 0.84, 0.05, 0.5 ] ]
         var sizes = { tortola : 0.743015, puput : 1.0483234923, golondrina : 1.5, estornino : 1.3110737618, codorniz : 1.2  }
         var geometry = new BufferGeometry();
@@ -83,6 +96,10 @@ class BirdMesh extends Mesh {
 
     shapeUpdate( c ){
         this.computationRender.makeFormation( c )
+    }
+
+    leaveScreen(){
+        this.computationRender.leaveScreen( c )
     }
 
     makeFormation( data ){

@@ -31,7 +31,7 @@ void main() {
 	vec4 position = texture2D( texturePosition, reference );
 	float f = frame + floor( vertexID.z * 60.0 );
 	float ff = mod( f + vertexID.z * 60.0, 60.0 );
-	vec3 fPos = texture2D( txtAnimation, vec2( vertexID.x / 2048.0, ( ff + 60.0 * vertexID.y ) / 2048.0 ) ).xyz;
+	vec3 fPos = texture2D( txtAnimation, vec2( vertexID.x / 2048.0, ( ff + 60.0 * vertexID.y ) / 300.0 ) ).xyz;
 	fPos *= vertexID.w;
 	// if( position.w > 0.0 ) fPos *= 1.0 + 3.0 * position.w;
 	fPos *= 15.0;
@@ -50,16 +50,15 @@ void main() {
 
 	vec3 pos = texture2D( texturePosition, reference ).xyz;
 
-	fPos *= mat3( modelMatrix );
+	// fPos *= mat3( modelMatrix );
 	velocity.z *= -1.;
 	float xz = length( velocity.xz );
-	float xyz = 1.0;
 	float x = sqrt( 1. - velocity.y * velocity.y );
 
 	float cosry = velocity.x / xz;
 	float sinry = velocity.z / xz;
-	float cosrz = x / xyz;
-	float sinrz = velocity.y / xyz;
+	float cosrz = x;
+	float sinrz = velocity.y;
 
 	// if( formation.w == 1.0 ){
 	// 	cosry = mix( velocity.x / xz, 1.0, position.w );

@@ -75,8 +75,8 @@ class ComputationRender{
             this.formationTimeout = setTimeout( function(){ this.makeFormation( c ) }.bind( this ), 3000 )
             return
         }
-        this.inFormation = true
 
+        this.inFormation = true
         this.velocityUniforms.impulse.value = true
 
         this.formation = true
@@ -90,6 +90,23 @@ class ComputationRender{
                 var p = new Vector4( Math.cos( a ) * frustrumSize.x, Math.sin( a ) * frustrumSize.x, 0, 0 )
                 ps.push( p.x, p.y, p.z, 1 )
             }
+        }
+        ps[0] = 10000
+        ps[1] = 10000
+        ps[2] = 10000
+        this.dtFormation.image.data = new Float32Array( ps )
+        this.dtFormation.needsUpdate = true
+    }
+
+    leaveScreen(){
+        this.inFormation = true
+        var ps = []
+        for ( var k = 0, kl = this.totalBirds * 4, i = 0; k < kl; k += 4, i = k / 4 ) {
+            var d = Math.random() * 250, frustrumSize = this.sizeAtDepth( d, this.camera )
+            var a = Math.PI * 2 * ( ( i ) / ( this.totalBirds ) ) * 10
+            var p = new Vector4( Math.cos( a ) * frustrumSize.x, Math.sin( a ) * frustrumSize.x, d, 0 )
+
+            ps.push( p.x, p.y, p.z, p.w )
         }
         this.dtFormation.image.data = new Float32Array( ps )
         this.dtFormation.needsUpdate = true
@@ -107,7 +124,7 @@ class ComputationRender{
             var d = Math.random() * 250, frustrumSize = this.sizeAtDepth( d, this.camera )
             var a = Math.PI * 2 * ( ( i ) / ( this.totalBirds ) ) * 10
             var p = new Vector4( Math.cos( a ) * frustrumSize.x, Math.sin( a ) * frustrumSize.x, d, 0 )
-            if( this.active.indexOf( i ) > -1 ) p = new Vector4( ( Math.random() - 0.5 ) * frustrumSize.x , ( Math.random() - 0.5 ) * frustrumSize.y, d, 0 )
+            // if( this.active.indexOf( i ) > -1 ) p = new Vector4( ( Math.random() - 0.5 ) * frustrumSize.x , ( Math.random() - 0.5 ) * frustrumSize.y, d, 0 )
             ps.push( p.x, p.y, p.z, p.w )
         }
         this.dtPosition.image.data = new Float32Array( ps )
