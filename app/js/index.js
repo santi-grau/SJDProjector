@@ -44,9 +44,7 @@ class Index{
         this.step()
         
         // setTimeout( () => this.birdMesh.computationRender.leaveScreen( ), 30000 )
-        setTimeout( () => this.birdMesh.makeFormation( { type : 'text', content : 'ines' } ), 4000 )
-        setTimeout( () => this.birdMesh.computationRender.undoFormation(), 9000 )
-        setTimeout( () => this.birdMesh.makeFormation( { type : 'text', content : 'culo' } ), 12000 )
+        setTimeout( () => this.birdMesh.makeFormation( { type : 'text', content : 'SJD' } ), 9000 )
         setTimeout( () => this.birdMesh.computationRender.undoFormation(), 17000 )
         setTimeout( () => this.birdMesh.computationRender.leaveScreen( ), 21000 )
         
