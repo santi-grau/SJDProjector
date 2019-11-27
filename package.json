@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node ./parseSVG.js && code ./ && parcel app/views/index.pug --no-hmr",
+    "start": "node ./parseSVG.js && parcel app/views/index.pug --no-hmr",
     "build": "rm -rf docs && parcel build app/views/*.pug --no-source-maps --out-dir docs --public-url '.'"
   },
   "keywords": [],
