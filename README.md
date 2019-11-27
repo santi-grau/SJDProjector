@@ -2,13 +2,19 @@
 
 
 
-### Per executar la app en local:
+### Per instalar dependencies i executar la app en local:
 
 +++ Instalar Node / NPM ( https://nodejs.org/ )
 
-$ npm i && npm run
+$ npm i && npm start
 
-Obrir el navegagor a http://localhost:1234
+Obrir el navegador a http://localhost:1234
+
+### Per executar la app en local:
+
+$ npm start
+
+Obrir el navegador a http://localhost:1234
 
 ### Obrir la app en local:
 
